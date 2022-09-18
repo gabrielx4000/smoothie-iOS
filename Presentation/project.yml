@@ -1,0 +1,9 @@
+name: Presentation
+options:
+  bundleIdPrefix: com.smoothie
+targets:
+  Domain:
+    type: framework
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [ViewModels]

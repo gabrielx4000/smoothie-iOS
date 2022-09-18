@@ -1,0 +1,9 @@
+name: Domain
+options:
+  bundleIdPrefix: com.smoothie
+targets:
+  Domain:
+    type: framework
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [Entities, RepositoryInterfaces, UseCases]

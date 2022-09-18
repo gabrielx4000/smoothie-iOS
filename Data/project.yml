@@ -1,0 +1,24 @@
+name: Data
+options:
+  bundleIdPrefix: com.smoothie
+targets:
+  Data:
+    type: framework
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [Networking, Repositories, Storage]
+    scheme:
+      testTargets:
+        - DataUnitTests
+      gatherCoverageData: true
+    info:
+      path: Info.plist
+  DataUnitTests:
+    sources: Tests
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "13.0"
+    info:
+      path: Info.plist
+    depencencies:
+      - target: Data
