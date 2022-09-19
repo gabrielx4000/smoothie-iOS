@@ -1,3 +1,4 @@
+import Domain
 import Foundation
 
 public struct NutritionDTO: Decodable {
@@ -31,6 +32,22 @@ public struct FruitDTO: Decodable {
     enum CodingKeys: String, CodingKey {
         case id, name, genus, family, order
         case nutrition = "nutritions"
+    }
+    
+}
+
+extension FruitDTO {
+    
+    public func toDomain() -> Fruit {
+        return Fruit(id: id, name: name, genus: genus, family: family, order: order, nutrition: nutrition.toDomain())
+    }
+    
+}
+
+extension NutritionDTO {
+    
+    public func toDomain() -> Nutrition {
+        return Nutrition(carbohydrates: carbohydrates, protein: protein, fat: fat, calories: calories, sugar: sugar)
     }
     
 }

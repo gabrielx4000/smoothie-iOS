@@ -1,19 +1,21 @@
-name: Domain
+name: Data
 options:
   bundleIdPrefix: com.smoothie
 targets:
-  Domain:
+  Data:
     type: framework
     platform: iOS
     deploymentTarget: "13.0"
-    sources: [Entities, RepositoryInterfaces, UseCases]
+    sources: [Networking, Repositories, Storage]
     scheme:
       testTargets:
-        - DomainUnitTests
+        - DataUnitTests
       gatherCoverageData: true
     info:
       path: Info.plist
-  DomainUnitTests:
+    depencencies:
+      target: Domain/Domain
+  DataUnitTests:
     sources: Tests
     type: bundle.unit-test
     platform: iOS
@@ -21,4 +23,4 @@ targets:
     info:
       path: Info.plist
     depencencies:
-      - target: Domain
+      - target: Data

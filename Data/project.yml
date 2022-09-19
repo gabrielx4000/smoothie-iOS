@@ -1,6 +1,9 @@
 name: Data
 options:
   bundleIdPrefix: com.smoothie
+projectReferences:
+  Domain:
+    path: ../Domain/Domain.xcodeproj
 targets:
   Data:
     type: framework
@@ -13,6 +16,10 @@ targets:
       gatherCoverageData: true
     info:
       path: Info.plist
+    depencencies:
+      - target: Domain/Domain
+        link: true
+        embed: true
   DataUnitTests:
     sources: Tests
     type: bundle.unit-test
