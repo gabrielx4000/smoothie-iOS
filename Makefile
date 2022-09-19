@@ -1,8 +1,7 @@
-create_config: wipe
-	xcodegen generate --spec Domain/project.yml --project Domain
-	xcodegen generate --spec Data/project.yml --project Data
-	xcodegen generate --spec Presentation/project.yml --project Presentation
-wipe:
-	rm -rf Domain/Domain.xcodeproj Domain/Info.plist
-	rm -rf Data/Data.xcodeproj Data/Info.plist
-	rm -rf Presentation/Presentation.xcodeproj Presentation/Info.plist
+test:
+	xcodebuild clean test \
+            -project Data/Data.xcodeproj \
+            -scheme DataUnitTests \
+            -derivedDataPath build \
+            -destination "platform=iOS Simulator,name=iPhone 11" \
+            -resultBundlePath ./build/data-test-results.xcresult

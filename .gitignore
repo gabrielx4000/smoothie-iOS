@@ -91,7 +91,3 @@ iOSInjectionProject/
 
 # Mac
 *.DS_Store
-
-# xcodegen
-*.xcodeproj
-*.plist
