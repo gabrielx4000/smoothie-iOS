@@ -1,7 +1,8 @@
 test:
+	rm -rf build
 	xcodebuild clean test \
-            -project Data/Data.xcodeproj \
-            -scheme DataUnitTests \
+            -workspace Smoothie.xcworkspace \
+            -scheme Smoothie \
             -derivedDataPath build \
             -destination "platform=iOS Simulator,name=iPhone 11" \
-            -resultBundlePath ./build/data-test-results.xcresult
+            -resultBundlePath ./build/test-results.xcresult
