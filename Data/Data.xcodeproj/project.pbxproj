@@ -26,7 +26,13 @@
 		A20DD36C28D7FE0900CC08C5 /* SmoothieEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD36928D7FE0900CC08C5 /* SmoothieEndpointTests.swift */; };
 		A20DD36D28D7FE0900CC08C5 /* FruitsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD36A28D7FE0900CC08C5 /* FruitsEndpointTests.swift */; };
 		A20DD37028D7FE6800CC08C5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A20DD36F28D7FE6800CC08C5 /* RealmSwift */; };
+		A281E1C528D9424A0027B358 /* RealmSmoothiesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD33828D7FD2900CC08C5 /* RealmSmoothiesStorage.swift */; };
 		A2AA0C8528D801680036ED1C /* RealmFruitsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA0C8428D801680036ED1C /* RealmFruitsStorageTests.swift */; };
+		A2C9819B28D815A8006E5918 /* SmoothieNutritionRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9819A28D815A8006E5918 /* SmoothieNutritionRO.swift */; };
+		A2C9819D28D815D7006E5918 /* SmoothieRecommendedRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9819C28D815D7006E5918 /* SmoothieRecommendedRO.swift */; };
+		A2C9819F28D81607006E5918 /* SmoothieStepRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9819E28D81607006E5918 /* SmoothieStepRO.swift */; };
+		A2C981A128D81642006E5918 /* SmoothieTipRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C981A028D81642006E5918 /* SmoothieTipRO.swift */; };
+		A2C981A328D81662006E5918 /* SmoothieRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C981A228D81662006E5918 /* SmoothieRO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +85,6 @@
 		A20DD33128D7FD2900CC08C5 /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		A20DD33228D7FD2900CC08C5 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A20DD33528D7FD2900CC08C5 /* FruitNutritionRO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitNutritionRO.swift; sourceTree = "<group>"; };
-		A20DD33628D7FD2900CC08C5 /* SmoothieRO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieRO.swift; sourceTree = "<group>"; };
 		A20DD33728D7FD2900CC08C5 /* FruitRO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitRO.swift; sourceTree = "<group>"; };
 		A20DD33828D7FD2900CC08C5 /* RealmSmoothiesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmSmoothiesStorage.swift; sourceTree = "<group>"; };
 		A20DD33928D7FD2900CC08C5 /* RealmFruitsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmFruitsStorage.swift; sourceTree = "<group>"; };
@@ -89,6 +94,11 @@
 		A20DD36928D7FE0900CC08C5 /* SmoothieEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieEndpointTests.swift; sourceTree = "<group>"; };
 		A20DD36A28D7FE0900CC08C5 /* FruitsEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsEndpointTests.swift; sourceTree = "<group>"; };
 		A2AA0C8428D801680036ED1C /* RealmFruitsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFruitsStorageTests.swift; sourceTree = "<group>"; };
+		A2C9819A28D815A8006E5918 /* SmoothieNutritionRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieNutritionRO.swift; sourceTree = "<group>"; };
+		A2C9819C28D815D7006E5918 /* SmoothieRecommendedRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRecommendedRO.swift; sourceTree = "<group>"; };
+		A2C9819E28D81607006E5918 /* SmoothieStepRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieStepRO.swift; sourceTree = "<group>"; };
+		A2C981A028D81642006E5918 /* SmoothieTipRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieTipRO.swift; sourceTree = "<group>"; };
+		A2C981A228D81662006E5918 /* SmoothieRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				A20DD37128D8000600CC08C5 /* Fruit */,
-				A20DD33628D7FD2900CC08C5 /* SmoothieRO.swift */,
+				A2C9819328D81300006E5918 /* Smoothie */,
 			);
 			path = RealmObjects;
 			sourceTree = "<group>";
@@ -234,6 +244,18 @@
 				A20DD36A28D7FE0900CC08C5 /* FruitsEndpointTests.swift */,
 			);
 			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		A2C9819328D81300006E5918 /* Smoothie */ = {
+			isa = PBXGroup;
+			children = (
+				A2C9819A28D815A8006E5918 /* SmoothieNutritionRO.swift */,
+				A2C981A228D81662006E5918 /* SmoothieRO.swift */,
+				A2C9819C28D815D7006E5918 /* SmoothieRecommendedRO.swift */,
+				A2C9819E28D81607006E5918 /* SmoothieStepRO.swift */,
+				A2C981A028D81642006E5918 /* SmoothieTipRO.swift */,
+			);
+			path = Smoothie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,17 +397,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20DD34128D7FD2900CC08C5 /* Endpoint.swift in Sources */,
+				A2C981A328D81662006E5918 /* SmoothieRO.swift in Sources */,
 				A20DD34028D7FD2900CC08C5 /* SmoothiesEndpoint.swift in Sources */,
+				A2C9819D28D815D7006E5918 /* SmoothieRecommendedRO.swift in Sources */,
 				A20DD33B28D7FD2900CC08C5 /* FruitDTO.swift in Sources */,
 				A20DD33C28D7FD2900CC08C5 /* SmoothieListDTO.swift in Sources */,
+				A2C9819B28D815A8006E5918 /* SmoothieNutritionRO.swift in Sources */,
 				A20DD33E28D7FD2900CC08C5 /* SmoothieEndpoint.swift in Sources */,
 				A20DD34428D7FD2900CC08C5 /* FruitNutritionRO.swift in Sources */,
+				A2C981A128D81642006E5918 /* SmoothieTipRO.swift in Sources */,
 				A20DD33F28D7FD2900CC08C5 /* FruitsEndpoint.swift in Sources */,
 				A20DD34828D7FD2900CC08C5 /* RealmFruitsStorage.swift in Sources */,
 				A20DD34628D7FD2900CC08C5 /* FruitRO.swift in Sources */,
+				A2C9819F28D81607006E5918 /* SmoothieStepRO.swift in Sources */,
 				A20DD34328D7FD2900CC08C5 /* NetworkError.swift in Sources */,
 				A20DD33D28D7FD2900CC08C5 /* SmoothieDTO.swift in Sources */,
 				A20DD34228D7FD2900CC08C5 /* NetworkHandler.swift in Sources */,
+				A281E1C528D9424A0027B358 /* RealmSmoothiesStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

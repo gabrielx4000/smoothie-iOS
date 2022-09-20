@@ -34,7 +34,7 @@ public class FruitRO: Object {
 extension FruitRO {
     
     func toDomain() -> Fruit {
-        let nutrition = nutrition ?? FruitNutritionRO(nutrition: Nutrition(carbohydrates: 0, protein: 0, fat: 0, calories: 0, sugar: 0))
+        let nutrition = nutrition ?? FruitNutritionRO(nutrition: FruitNutrition(carbohydrates: 0, protein: 0, fat: 0, calories: 0, sugar: 0))
         
         return Fruit(id: id, name: name, genus: genus, family: family, order: order, nutrition: nutrition.toDomain())
     }

@@ -46,8 +46,8 @@ extension FruitDTO {
 
 extension NutritionDTO {
     
-    public func toDomain() -> Nutrition {
-        return Nutrition(carbohydrates: carbohydrates, protein: protein, fat: fat, calories: calories, sugar: sugar)
+    public func toDomain() -> FruitNutrition {
+        return FruitNutrition(carbohydrates: carbohydrates, protein: protein, fat: fat, calories: calories, sugar: sugar)
     }
     
 }

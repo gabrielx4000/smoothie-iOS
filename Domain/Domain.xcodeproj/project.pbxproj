@@ -15,6 +15,11 @@
 		A20DD30128D7FB4000CC08C5 /* GetSmoothiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD2FB28D7FB4000CC08C5 /* GetSmoothiesUseCase.swift */; };
 		A20DD30A28D7FB6400CC08C5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A298AD0528D7FAEE0045DD73 /* Domain.framework */; };
 		A20DD31228D7FB9500CC08C5 /* DomainUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD31128D7FB9500CC08C5 /* DomainUnitTests.swift */; };
+		A281E1C728D943D90027B358 /* FruitNutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1C628D943D90027B358 /* FruitNutrition.swift */; };
+		A281E1C928D9443E0027B358 /* SmoothieStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1C828D9443E0027B358 /* SmoothieStep.swift */; };
+		A281E1CB28D9446A0027B358 /* SmoothieRecommended.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1CA28D9446A0027B358 /* SmoothieRecommended.swift */; };
+		A281E1CD28D944A10027B358 /* SmoothieNutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1CC28D944A10027B358 /* SmoothieNutrition.swift */; };
+		A281E1CF28D944CC0027B358 /* SmoothieTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1CE28D944CC0027B358 /* SmoothieTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		A20DD2FB28D7FB4000CC08C5 /* GetSmoothiesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSmoothiesUseCase.swift; sourceTree = "<group>"; };
 		A20DD30628D7FB6400CC08C5 /* DomainUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20DD31128D7FB9500CC08C5 /* DomainUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainUnitTests.swift; sourceTree = "<group>"; };
+		A281E1C628D943D90027B358 /* FruitNutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrition.swift; sourceTree = "<group>"; };
+		A281E1C828D9443E0027B358 /* SmoothieStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieStep.swift; sourceTree = "<group>"; };
+		A281E1CA28D9446A0027B358 /* SmoothieRecommended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRecommended.swift; sourceTree = "<group>"; };
+		A281E1CC28D944A10027B358 /* SmoothieNutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieNutrition.swift; sourceTree = "<group>"; };
+		A281E1CE28D944CC0027B358 /* SmoothieTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieTip.swift; sourceTree = "<group>"; };
 		A298AD0528D7FAEE0045DD73 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,7 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				A20DD2F728D7FB4000CC08C5 /* Fruit.swift */,
+				A281E1C628D943D90027B358 /* FruitNutrition.swift */,
 				A20DD2F828D7FB4000CC08C5 /* Smoothie.swift */,
+				A281E1C828D9443E0027B358 /* SmoothieStep.swift */,
+				A281E1CA28D9446A0027B358 /* SmoothieRecommended.swift */,
+				A281E1CC28D944A10027B358 /* SmoothieNutrition.swift */,
+				A281E1CE28D944CC0027B358 /* SmoothieTip.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -230,11 +245,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20DD30128D7FB4000CC08C5 /* GetSmoothiesUseCase.swift in Sources */,
+				A281E1C928D9443E0027B358 /* SmoothieStep.swift in Sources */,
+				A281E1CF28D944CC0027B358 /* SmoothieTip.swift in Sources */,
+				A281E1CB28D9446A0027B358 /* SmoothieRecommended.swift in Sources */,
 				A20DD2FE28D7FB4000CC08C5 /* Fruit.swift in Sources */,
+				A281E1CD28D944A10027B358 /* SmoothieNutrition.swift in Sources */,
 				A20DD2FF28D7FB4000CC08C5 /* Smoothie.swift in Sources */,
 				A20DD2FD28D7FB4000CC08C5 /* FruitsRepositoryInterface.swift in Sources */,
 				A20DD2FC28D7FB4000CC08C5 /* SmoothiesRepositoryInterface.swift in Sources */,
 				A20DD30028D7FB4000CC08C5 /* GetFruitsUseCase.swift in Sources */,
+				A281E1C728D943D90027B358 /* FruitNutrition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

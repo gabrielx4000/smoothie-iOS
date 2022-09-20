@@ -18,7 +18,7 @@ public class FruitNutritionRO: EmbeddedObject {
         super.init()
     }
     
-    public init(nutrition: Nutrition) {
+    public init(nutrition: FruitNutrition) {
         self.carbohydrates = nutrition.carbohydrates
         self.protein = nutrition.protein
         self.fat = nutrition.fat
@@ -30,8 +30,8 @@ public class FruitNutritionRO: EmbeddedObject {
 
 extension FruitNutritionRO {
     
-    func toDomain() -> Nutrition {
-        return Nutrition(carbohydrates: carbohydrates, protein: protein, fat: fat, calories: calories, sugar: sugar)
+    func toDomain() -> FruitNutrition {
+        return FruitNutrition(carbohydrates: carbohydrates, protein: protein, fat: fat, calories: calories, sugar: sugar)
     }
     
 }

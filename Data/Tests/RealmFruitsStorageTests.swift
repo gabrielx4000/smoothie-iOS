@@ -44,7 +44,7 @@ final class RealmFruitsStorageTests: XCTestCase {
     }
     
     func makeBanana() -> FruitRO {
-        let nutrition = Nutrition(carbohydrates: 22, protein: 1, fat: 0.2, calories: 96, sugar: 17.2)
+        let nutrition = FruitNutrition(carbohydrates: 22, protein: 1, fat: 0.2, calories: 96, sugar: 17.2)
         let banana = Fruit(id: 1, name: "Banana", genus: "Musa", family: "Musaceae", order: "Zingiberales", nutrition: nutrition)
         
         return FruitRO(fruit: banana)
