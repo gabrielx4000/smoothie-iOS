@@ -34,35 +34,46 @@ public class RealmSmoothiesStorage {
             
             smoothieRO.title = smoothie.title
             smoothieRO.url = smoothie.url
-            smoothieRO.text = smoothie.description
+            smoothieRO.text = smoothie.description ?? ""
             smoothieRO.thumbnail = smoothie.thumbnail
-            smoothieRO.prepTime = smoothie.prepTime
-            smoothieRO.skill = smoothie.skill
-            smoothieRO.servings = smoothie.servings
+            smoothieRO.prepTime = smoothie.prepTime ?? ""
+            smoothieRO.skill = smoothie.skill ?? ""
+            smoothieRO.servings = smoothie.servings ?? ""
             smoothieRO.rating = smoothie.rating
             
             smoothieRO.tags.removeAll()
             smoothieRO.tags.append(objectsIn: smoothie.tags)
             
             smoothieRO.ingredients.removeAll()
-            smoothieRO.ingredients.append(objectsIn: smoothie.ingredients)
+            
+            if let ingredients = smoothie.ingredients {
+                smoothieRO.ingredients.append(objectsIn: ingredients)
+            }
             
             if let nutrition = smoothieRO.nutrition {
                 realm.delete(nutrition)
             }
-            smoothieRO.nutrition = SmoothieNutritionRO(nutrition: smoothie.nutrition)
+            if let nutrition = smoothie.nutrition {
+                smoothieRO.nutrition = SmoothieNutritionRO(nutrition: nutrition)
+            }
             
             smoothieRO.steps.forEach { realm.delete($0) }
             smoothieRO.steps.removeAll()
-            smoothieRO.steps.append(objectsIn: smoothie.steps.compactMap { SmoothieStepRO(step: $0) })
+            if let steps = smoothie.steps {
+                smoothieRO.steps.append(objectsIn: steps.compactMap { SmoothieStepRO(step: $0) })
+            }
             
             smoothieRO.recommended.forEach { realm.delete($0) }
             smoothieRO.recommended.removeAll()
-            smoothieRO.recommended.append(objectsIn: smoothie.recommended.compactMap { SmoothieRecommendedRO(recommended: $0) })
+            if let recommended = smoothie.recommended {
+                smoothieRO.recommended.append(objectsIn: recommended.compactMap { SmoothieRecommendedRO(recommended: $0) })
+            }
             
             smoothieRO.tips.forEach { realm.delete($0) }
             smoothieRO.tips.removeAll()
-            smoothieRO.tips.append(objectsIn: smoothie.tips.compactMap { SmoothieTipRO(tip: $0) })
+            if let tips = smoothie.tips {
+                smoothieRO.tips.append(objectsIn: tips.compactMap { SmoothieTipRO(tip: $0) })
+            }
         }
     }
     

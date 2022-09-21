@@ -39,18 +39,33 @@ public class SmoothieRO: Object {
         
         self.title = smoothie.title
         self.url = smoothie.url
-        self.text = smoothie.description
         self.thumbnail = smoothie.thumbnail
-        self.prepTime = smoothie.prepTime
-        self.skill = smoothie.skill
-        self.servings = smoothie.servings
+        self.text = smoothie.description ?? ""
+        self.prepTime = smoothie.prepTime ?? ""
+        self.skill = smoothie.skill ?? ""
+        self.servings = smoothie.servings ?? ""
         self.rating = smoothie.rating
         self.tags.append(objectsIn: smoothie.tags)
-        self.ingredients.append(objectsIn: smoothie.ingredients)
-        self.nutrition = SmoothieNutritionRO(nutrition: smoothie.nutrition)
-        self.steps.append(objectsIn: smoothie.steps.compactMap { SmoothieStepRO(step: $0) })
-        self.recommended.append(objectsIn: smoothie.recommended.compactMap { SmoothieRecommendedRO(recommended: $0) })
-        self.tips.append(objectsIn: smoothie.tips.compactMap { SmoothieTipRO(tip: $0) })
+        
+        if let ingredients = smoothie.ingredients {
+            self.ingredients.append(objectsIn: ingredients)
+        }
+        
+        if let nutrition = smoothie.nutrition {
+            self.nutrition = SmoothieNutritionRO(nutrition: nutrition)
+        }
+        
+        if let steps = smoothie.steps {
+            self.steps.append(objectsIn: steps.compactMap { SmoothieStepRO(step: $0) })
+        }
+        
+        if let recommended = smoothie.recommended {
+            self.recommended.append(objectsIn: recommended.compactMap { SmoothieRecommendedRO(recommended: $0) })
+        }
+        
+        if let tips = smoothie.tips {
+            self.tips.append(objectsIn: tips.compactMap { SmoothieTipRO(tip: $0) })
+        }
     }
     
     override init() {
@@ -70,7 +85,7 @@ extension SmoothieRO {
         
         let tips = Array(tips.compactMap { $0.toDomain() })
         
-        return Smoothie(title: title, url: url, description: text, thumbnail: thumbnail, prepTime: prepTime, skill: skill, servings: servings, rating: rating, tags: Array(tags), ingredients: Array(ingredients), nutrition: nutrition, steps: steps, recommended: recommended, tips: tips)
+        return Smoothie(title: title, url: url, thumbnail: thumbnail, rating: rating, tags: Array(tags), isSynced: isSynced, description: text, prepTime: prepTime, skill: skill, servings: servings, ingredients: Array(ingredients), nutrition: nutrition, steps: steps, recommended: recommended, tips: tips)
     }
     
 }

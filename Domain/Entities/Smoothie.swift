@@ -6,40 +6,43 @@ public struct Smoothie {
     
     public var url: String
 
-    public var description: String
-    
     public var thumbnail: String
-    
-    public var prepTime: String
-    
-    public var skill: String
-    
-    public var servings: String
     
     public var rating: String
     
     public var tags: [String]
     
-    public var ingredients: [String]
+    public var isSynced = false
     
-    public var nutrition: SmoothieNutrition
+    public var description: String?
     
-    public var steps: [SmoothieStep]
+    public var prepTime: String?
     
-    public var recommended: [SmoothieRecommended]
+    public var skill: String?
     
-    public var tips: [SmoothieTip]
+    public var servings: String?
     
-    public init(title: String, url: String, description: String, thumbnail: String, prepTime: String, skill: String, servings: String, rating: String, tags: [String], ingredients: [String], nutrition: SmoothieNutrition, steps: [SmoothieStep], recommended: [SmoothieRecommended], tips: [SmoothieTip]) {
+    public var ingredients: [String]?
+    
+    public var nutrition: SmoothieNutrition?
+    
+    public var steps: [SmoothieStep]?
+    
+    public var recommended: [SmoothieRecommended]?
+    
+    public var tips: [SmoothieTip]?
+    
+    public init(title: String, url: String, thumbnail: String, rating: String, tags: [String], isSynced: Bool = false, description: String? = nil, prepTime: String? = nil, skill: String? = nil, servings: String? = nil, ingredients: [String]? = nil, nutrition: SmoothieNutrition? = nil, steps: [SmoothieStep]? = nil, recommended: [SmoothieRecommended]? = nil, tips: [SmoothieTip]? = nil) {
         self.title = title
         self.url = url
-        self.description = description
         self.thumbnail = thumbnail
+        self.rating = rating
+        self.tags = tags
+        self.isSynced = isSynced
+        self.description = description
         self.prepTime = prepTime
         self.skill = skill
         self.servings = servings
-        self.rating = rating
-        self.tags = tags
         self.ingredients = ingredients
         self.nutrition = nutrition
         self.steps = steps
