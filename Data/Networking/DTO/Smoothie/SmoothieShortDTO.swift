@@ -1,6 +1,6 @@
 import Foundation
 
-public struct SmoothieListDTO: Decodable {
+public struct SmoothieShortDTO: Decodable {
     
     public var title: String
     

@@ -10,7 +10,7 @@ public class RealmSmoothiesStorage {
         self.realm = try? Realm()
     }
     
-    public func fetchSmoothie() -> [Smoothie] {
+    public func fetchSmoothies() -> [Smoothie] {
         guard let realm = realm else { return [] }
         
         return realm.objects(SmoothieRO.self).compactMap { $0.toDomain() }

@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A203322628DB559100BAE760 /* RealmSmoothiesStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203322528DB559100BAE760 /* RealmSmoothiesStorageTests.swift */; };
+		A203322C28DB730100BAE760 /* SmoothieNutritionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203322828DB730100BAE760 /* SmoothieNutritionDTO.swift */; };
+		A203322D28DB730100BAE760 /* SmoothieTipDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203322928DB730100BAE760 /* SmoothieTipDTO.swift */; };
+		A203322E28DB730100BAE760 /* SmoothieStepDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203322A28DB730100BAE760 /* SmoothieStepDTO.swift */; };
+		A203322F28DB730100BAE760 /* SmoothieRecommendedDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203322B28DB730100BAE760 /* SmoothieRecommendedDTO.swift */; };
 		A20DD33B28D7FD2900CC08C5 /* FruitDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD32928D7FD2900CC08C5 /* FruitDTO.swift */; };
-		A20DD33C28D7FD2900CC08C5 /* SmoothieListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD32A28D7FD2900CC08C5 /* SmoothieListDTO.swift */; };
-		A20DD33D28D7FD2900CC08C5 /* SmoothieDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD32B28D7FD2900CC08C5 /* SmoothieDTO.swift */; };
+		A20DD33C28D7FD2900CC08C5 /* SmoothieShortDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD32A28D7FD2900CC08C5 /* SmoothieShortDTO.swift */; };
+		A20DD33D28D7FD2900CC08C5 /* SmoothieCompleteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD32B28D7FD2900CC08C5 /* SmoothieCompleteDTO.swift */; };
 		A20DD33E28D7FD2900CC08C5 /* SmoothieEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD32D28D7FD2900CC08C5 /* SmoothieEndpoint.swift */; };
 		A20DD33F28D7FD2900CC08C5 /* FruitsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD32E28D7FD2900CC08C5 /* FruitsEndpoint.swift */; };
 		A20DD34028D7FD2900CC08C5 /* SmoothiesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD32F28D7FD2900CC08C5 /* SmoothiesEndpoint.swift */; };
@@ -26,6 +31,7 @@
 		A20DD36C28D7FE0900CC08C5 /* SmoothieEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD36928D7FE0900CC08C5 /* SmoothieEndpointTests.swift */; };
 		A20DD36D28D7FE0900CC08C5 /* FruitsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD36A28D7FE0900CC08C5 /* FruitsEndpointTests.swift */; };
 		A20DD37028D7FE6800CC08C5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A20DD36F28D7FE6800CC08C5 /* RealmSwift */; };
+		A22A6A5D28DB73E400F64B20 /* FruitNutritionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A6A5C28DB73E400F64B20 /* FruitNutritionDTO.swift */; };
 		A281E1C528D9424A0027B358 /* RealmSmoothiesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD33828D7FD2900CC08C5 /* RealmSmoothiesStorage.swift */; };
 		A2AA0C8528D801680036ED1C /* RealmFruitsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA0C8428D801680036ED1C /* RealmFruitsStorageTests.swift */; };
 		A2C9819B28D815A8006E5918 /* SmoothieNutritionRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9819A28D815A8006E5918 /* SmoothieNutritionRO.swift */; };
@@ -74,10 +80,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A203322528DB559100BAE760 /* RealmSmoothiesStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSmoothiesStorageTests.swift; sourceTree = "<group>"; };
+		A203322828DB730100BAE760 /* SmoothieNutritionDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieNutritionDTO.swift; sourceTree = "<group>"; };
+		A203322928DB730100BAE760 /* SmoothieTipDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieTipDTO.swift; sourceTree = "<group>"; };
+		A203322A28DB730100BAE760 /* SmoothieStepDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieStepDTO.swift; sourceTree = "<group>"; };
+		A203322B28DB730100BAE760 /* SmoothieRecommendedDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieRecommendedDTO.swift; sourceTree = "<group>"; };
 		A20DD31D28D7FC9700CC08C5 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20DD32928D7FD2900CC08C5 /* FruitDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitDTO.swift; sourceTree = "<group>"; };
-		A20DD32A28D7FD2900CC08C5 /* SmoothieListDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieListDTO.swift; sourceTree = "<group>"; };
-		A20DD32B28D7FD2900CC08C5 /* SmoothieDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieDTO.swift; sourceTree = "<group>"; };
+		A20DD32A28D7FD2900CC08C5 /* SmoothieShortDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieShortDTO.swift; sourceTree = "<group>"; };
+		A20DD32B28D7FD2900CC08C5 /* SmoothieCompleteDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieCompleteDTO.swift; sourceTree = "<group>"; };
 		A20DD32D28D7FD2900CC08C5 /* SmoothieEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieEndpoint.swift; sourceTree = "<group>"; };
 		A20DD32E28D7FD2900CC08C5 /* FruitsEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsEndpoint.swift; sourceTree = "<group>"; };
 		A20DD32F28D7FD2900CC08C5 /* SmoothiesEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothiesEndpoint.swift; sourceTree = "<group>"; };
@@ -93,6 +104,7 @@
 		A20DD36828D7FE0900CC08C5 /* SmoothiesEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothiesEndpointTests.swift; sourceTree = "<group>"; };
 		A20DD36928D7FE0900CC08C5 /* SmoothieEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieEndpointTests.swift; sourceTree = "<group>"; };
 		A20DD36A28D7FE0900CC08C5 /* FruitsEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsEndpointTests.swift; sourceTree = "<group>"; };
+		A22A6A5C28DB73E400F64B20 /* FruitNutritionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutritionDTO.swift; sourceTree = "<group>"; };
 		A2AA0C8428D801680036ED1C /* RealmFruitsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFruitsStorageTests.swift; sourceTree = "<group>"; };
 		A2C9819A28D815A8006E5918 /* SmoothieNutritionRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieNutritionRO.swift; sourceTree = "<group>"; };
 		A2C9819C28D815D7006E5918 /* SmoothieRecommendedRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRecommendedRO.swift; sourceTree = "<group>"; };
@@ -122,6 +134,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A203322728DB572100BAE760 /* StorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2AA0C8428D801680036ED1C /* RealmFruitsStorageTests.swift */,
+				A203322528DB559100BAE760 /* RealmSmoothiesStorageTests.swift */,
+			);
+			path = StorageTests;
+			sourceTree = "<group>";
+		};
+		A203323028DB736A00BAE760 /* Smoothie */ = {
+			isa = PBXGroup;
+			children = (
+				A203322828DB730100BAE760 /* SmoothieNutritionDTO.swift */,
+				A203322B28DB730100BAE760 /* SmoothieRecommendedDTO.swift */,
+				A203322A28DB730100BAE760 /* SmoothieStepDTO.swift */,
+				A203322928DB730100BAE760 /* SmoothieTipDTO.swift */,
+				A20DD32A28D7FD2900CC08C5 /* SmoothieShortDTO.swift */,
+				A20DD32B28D7FD2900CC08C5 /* SmoothieCompleteDTO.swift */,
+			);
+			path = Smoothie;
+			sourceTree = "<group>";
+		};
 		A20DD31328D7FC9700CC08C5 = {
 			isa = PBXGroup;
 			children = (
@@ -157,9 +191,8 @@
 		A20DD32828D7FD2900CC08C5 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				A20DD32928D7FD2900CC08C5 /* FruitDTO.swift */,
-				A20DD32A28D7FD2900CC08C5 /* SmoothieListDTO.swift */,
-				A20DD32B28D7FD2900CC08C5 /* SmoothieDTO.swift */,
+				A22A6A5E28DB740C00F64B20 /* Fruit */,
+				A203323028DB736A00BAE760 /* Smoothie */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -222,7 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				A20DD37228D8004C00CC08C5 /* NetworkingTests */,
-				A2AA0C8428D801680036ED1C /* RealmFruitsStorageTests.swift */,
+				A203322728DB572100BAE760 /* StorageTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -244,6 +277,15 @@
 				A20DD36A28D7FE0900CC08C5 /* FruitsEndpointTests.swift */,
 			);
 			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		A22A6A5E28DB740C00F64B20 /* Fruit */ = {
+			isa = PBXGroup;
+			children = (
+				A20DD32928D7FD2900CC08C5 /* FruitDTO.swift */,
+				A22A6A5C28DB73E400F64B20 /* FruitNutritionDTO.swift */,
+			);
+			path = Fruit;
 			sourceTree = "<group>";
 		};
 		A2C9819328D81300006E5918 /* Smoothie */ = {
@@ -401,17 +443,22 @@
 				A20DD34028D7FD2900CC08C5 /* SmoothiesEndpoint.swift in Sources */,
 				A2C9819D28D815D7006E5918 /* SmoothieRecommendedRO.swift in Sources */,
 				A20DD33B28D7FD2900CC08C5 /* FruitDTO.swift in Sources */,
-				A20DD33C28D7FD2900CC08C5 /* SmoothieListDTO.swift in Sources */,
+				A20DD33C28D7FD2900CC08C5 /* SmoothieShortDTO.swift in Sources */,
+				A203322E28DB730100BAE760 /* SmoothieStepDTO.swift in Sources */,
 				A2C9819B28D815A8006E5918 /* SmoothieNutritionRO.swift in Sources */,
+				A203322D28DB730100BAE760 /* SmoothieTipDTO.swift in Sources */,
+				A203322C28DB730100BAE760 /* SmoothieNutritionDTO.swift in Sources */,
 				A20DD33E28D7FD2900CC08C5 /* SmoothieEndpoint.swift in Sources */,
 				A20DD34428D7FD2900CC08C5 /* FruitNutritionRO.swift in Sources */,
 				A2C981A128D81642006E5918 /* SmoothieTipRO.swift in Sources */,
 				A20DD33F28D7FD2900CC08C5 /* FruitsEndpoint.swift in Sources */,
 				A20DD34828D7FD2900CC08C5 /* RealmFruitsStorage.swift in Sources */,
+				A203322F28DB730100BAE760 /* SmoothieRecommendedDTO.swift in Sources */,
 				A20DD34628D7FD2900CC08C5 /* FruitRO.swift in Sources */,
+				A22A6A5D28DB73E400F64B20 /* FruitNutritionDTO.swift in Sources */,
 				A2C9819F28D81607006E5918 /* SmoothieStepRO.swift in Sources */,
 				A20DD34328D7FD2900CC08C5 /* NetworkError.swift in Sources */,
-				A20DD33D28D7FD2900CC08C5 /* SmoothieDTO.swift in Sources */,
+				A20DD33D28D7FD2900CC08C5 /* SmoothieCompleteDTO.swift in Sources */,
 				A20DD34228D7FD2900CC08C5 /* NetworkHandler.swift in Sources */,
 				A281E1C528D9424A0027B358 /* RealmSmoothiesStorage.swift in Sources */,
 			);
@@ -424,6 +471,7 @@
 				A20DD36C28D7FE0900CC08C5 /* SmoothieEndpointTests.swift in Sources */,
 				A20DD36D28D7FE0900CC08C5 /* FruitsEndpointTests.swift in Sources */,
 				A2AA0C8528D801680036ED1C /* RealmFruitsStorageTests.swift in Sources */,
+				A203322628DB559100BAE760 /* RealmSmoothiesStorageTests.swift in Sources */,
 				A20DD36B28D7FE0900CC08C5 /* SmoothiesEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
