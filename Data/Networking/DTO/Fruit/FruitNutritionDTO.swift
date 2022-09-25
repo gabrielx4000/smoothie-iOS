@@ -13,6 +13,14 @@ public struct FruitNutritionDTO: Decodable {
     
     public var sugar: Double
     
+    public init(carbohydrates: Double, protein: Double, fat: Double, calories: Double, sugar: Double) {
+        self.carbohydrates = carbohydrates
+        self.protein = protein
+        self.fat = fat
+        self.calories = calories
+        self.sugar = sugar
+    }
+    
 }
 
 extension FruitNutritionDTO {

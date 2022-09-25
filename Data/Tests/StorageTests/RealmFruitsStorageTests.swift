@@ -4,16 +4,20 @@ import RealmSwift
 import XCTest
 
 final class RealmFruitsStorageTests: XCTestCase {
-
+    
     var sut: RealmFruitsStorage!
     
+    let realm = try! Realm()
+    
     override func setUp() {
+        try! realm.write {
+            realm.deleteAll()
+        }
+        
         sut = RealmFruitsStorage()
     }
-
+    
     override func tearDown() {
-        let realm = try! Realm()
-        
         try! realm.write {
             realm.deleteAll()
         }
@@ -22,7 +26,7 @@ final class RealmFruitsStorageTests: XCTestCase {
     func testFetchFruits() {
         let realm = try! Realm()
         
-        let banana = makeBanana()
+        let banana = DataTestsHelper.makeBananaRO()
         
         try! realm.write {
             realm.add(banana)
@@ -37,17 +41,10 @@ final class RealmFruitsStorageTests: XCTestCase {
         let realm = try! Realm()
         
         XCTAssertEqual(realm.objects(FruitRO.self).count, 0)
-
-        try! sut.saveFruits(fruits: [makeBanana().toDomain()])
+        
+        try! sut.saveFruits(fruits: [DataTestsHelper.makeBananaRO().toDomain()])
         
         XCTAssertEqual(realm.objects(FruitRO.self).count, 1)
-    }
-    
-    func makeBanana() -> FruitRO {
-        let nutrition = FruitNutrition(carbohydrates: 22, protein: 1, fat: 0.2, calories: 96, sugar: 17.2)
-        let banana = Fruit(id: 1, name: "Banana", genus: "Musa", family: "Musaceae", order: "Zingiberales", nutrition: nutrition)
-        
-        return FruitRO(fruit: banana)
     }
     
 }

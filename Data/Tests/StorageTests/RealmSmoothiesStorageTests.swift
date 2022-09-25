@@ -259,7 +259,6 @@ final class RealmSmoothiesStorageTests: XCTestCase {
             thumbnail: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/afternoon-pick-me-up-smoothie-506a768.jpg",
             rating: "4.2",
             tags: tags,
-            isSynced: false,
             description: "Quick and easy to make, this banana, prune, almond milk and nut butter smoothie is an ideal on-the-go energy boost",
             prepTime: "5 mins",
             skill: "easy",

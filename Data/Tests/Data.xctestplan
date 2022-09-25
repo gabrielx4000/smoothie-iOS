@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "BD120A50-C0F6-4A5A-98D9-9B09117C5C47",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Data.xcodeproj",
+          "identifier" : "A20DD31C28D7FC9700CC08C5",
+          "name" : "Data"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Data.xcodeproj",
+        "identifier" : "A20DD35A28D7FDED00CC08C5",
+        "name" : "DataUnitTests"
+      }
+    }
+  ],
+  "version" : 1
+}

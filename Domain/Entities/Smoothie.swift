@@ -12,8 +12,6 @@ public struct Smoothie {
     
     public var tags: [String]
     
-    public var isSynced = false
-    
     public var description: String?
     
     public var prepTime: String?
@@ -32,13 +30,12 @@ public struct Smoothie {
     
     public var tips: [SmoothieTip]?
     
-    public init(title: String, url: String, thumbnail: String, rating: String, tags: [String], isSynced: Bool = false, description: String? = nil, prepTime: String? = nil, skill: String? = nil, servings: String? = nil, ingredients: [String]? = nil, nutrition: SmoothieNutrition? = nil, steps: [SmoothieStep]? = nil, recommended: [SmoothieRecommended]? = nil, tips: [SmoothieTip]? = nil) {
+    public init(title: String, url: String, thumbnail: String, rating: String, tags: [String], description: String? = nil, prepTime: String? = nil, skill: String? = nil, servings: String? = nil, ingredients: [String]? = nil, nutrition: SmoothieNutrition? = nil, steps: [SmoothieStep]? = nil, recommended: [SmoothieRecommended]? = nil, tips: [SmoothieTip]? = nil) {
         self.title = title
         self.url = url
         self.thumbnail = thumbnail
         self.rating = rating
         self.tags = tags
-        self.isSynced = isSynced
         self.description = description
         self.prepTime = prepTime
         self.skill = skill

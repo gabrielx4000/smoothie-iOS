@@ -3,7 +3,7 @@ import Foundation
 
 public protocol GetFruitsUseCaseProtocol {
     
-    func start() -> AnyPublisher<[Fruit], Error>
+    func start() -> AnyPublisher<[Fruit], Never>
     
 }
 
@@ -15,7 +15,7 @@ public class GetFruitsUseCase: GetFruitsUseCaseProtocol {
         self.repository = repository
     }
     
-    public func start() -> AnyPublisher<[Fruit], Error> {
+    public func start() -> AnyPublisher<[Fruit], Never> {
         return repository.getPublisher()
     }
     

@@ -85,7 +85,7 @@ extension SmoothieRO {
         
         let tips = Array(tips.compactMap { $0.toDomain() })
         
-        return Smoothie(title: title, url: url, thumbnail: thumbnail, rating: rating, tags: Array(tags), isSynced: isSynced, description: text, prepTime: prepTime, skill: skill, servings: servings, ingredients: Array(ingredients), nutrition: nutrition, steps: steps, recommended: recommended, tips: tips)
+        return Smoothie(title: title, url: url, thumbnail: thumbnail, rating: rating, tags: Array(tags), description: text, prepTime: prepTime, skill: skill, servings: servings, ingredients: Array(ingredients), nutrition: nutrition, steps: steps, recommended: recommended, tips: tips)
     }
     
 }

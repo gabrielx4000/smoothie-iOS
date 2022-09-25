@@ -3,6 +3,6 @@ import Foundation
 
 public protocol FruitsRepositoryInterface {
     
-    func getPublisher() -> AnyPublisher<[Fruit], Error>
+    func getPublisher() -> AnyPublisher<[Fruit], Never>
     
 }
