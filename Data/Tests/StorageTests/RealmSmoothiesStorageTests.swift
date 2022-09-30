@@ -80,8 +80,6 @@ final class RealmSmoothiesStorageTests: XCTestCase {
         
         XCTAssertEqual(Array(smoothie.tags), ["freezable", "gluten-free"])
         
-        XCTAssertEqual(smoothie.isSynced, true)
-        
         XCTAssertEqual(smoothie.text, "Quick and easy to make, this banana, prune, almond milk and nut butter smoothie is an ideal on-the-go energy boost")
         
         XCTAssertEqual(smoothie.prepTime, "5 mins")

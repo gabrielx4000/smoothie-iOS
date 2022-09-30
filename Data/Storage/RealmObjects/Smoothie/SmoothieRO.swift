@@ -14,8 +14,6 @@ public class SmoothieRO: Object {
     
     @Persisted public var tags = List<String>()
     
-    @Persisted public var isSynced: Bool = false
-    
     @Persisted public var text: String
     
     @Persisted public var prepTime: String

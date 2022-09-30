@@ -1,6 +1,12 @@
 import Foundation
 
-public class SmoothiesEndpoint: Endpoint {
+public protocol SmoothiesEndpointProtocol {
+    
+    func start() async throws -> [SmoothieShortDTO]
+    
+}
+
+public class SmoothiesEndpoint: Endpoint, SmoothiesEndpointProtocol {
     
     public func start() async throws -> [SmoothieShortDTO] {
         guard let url = URL(string: "\(host)/smoothies") else { throw NetworkError.urlParsing }

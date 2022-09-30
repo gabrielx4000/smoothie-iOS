@@ -13,11 +13,11 @@ public class FruitsRepository: FruitsRepositoryInterface {
         self.storage = storage
     }
     
-    private lazy var subject: CurrentValueSubject<[Fruit], Never> = CurrentValueSubject<[Fruit], Never>(storage.fetchFruits())
+    private lazy var subject: CurrentValueSubject<[Fruit], Error> = CurrentValueSubject<[Fruit], Error>(storage.fetchFruits())
     
-    private lazy var publisher: AnyPublisher<[Fruit], Never> = subject.eraseToAnyPublisher()
+    private lazy var publisher: AnyPublisher<[Fruit], Error> = subject.eraseToAnyPublisher()
     
-    public func getPublisher() -> AnyPublisher<[Fruit], Never> {
+    public func getPublisher() -> AnyPublisher<[Fruit], Error> {
         Task {
             do {
                 let syncedFruits = try await endpoint.start()
@@ -43,10 +43,12 @@ public class FruitsRepository: FruitsRepositoryInterface {
                         } catch {
                             print(error.localizedDescription)
                         }
+                    } else {
+                        self.subject.send(savedFruits)
                     }
                 }
             } catch {
-                print(error.localizedDescription)
+                self.subject.send(completion: .failure(error))
             }
         }
         

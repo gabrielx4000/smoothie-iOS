@@ -16,6 +16,12 @@ public class RealmSmoothiesStorage {
         return realm.objects(SmoothieRO.self).compactMap { $0.toDomain() }
     }
     
+    public func save(smoothies: [Smoothie]) throws {
+        try smoothies.forEach {
+             try save(smoothie: $0)
+        }
+    }
+    
     public func save(smoothie: Smoothie) throws {
         guard let realm = realm else { return }
         
@@ -30,8 +36,6 @@ public class RealmSmoothiesStorage {
         guard let realm = realm, let smoothieRO = realm.objects(SmoothieRO.self).where({ $0.url == smoothie.url }).first else { return }
         
         try realm.write {
-            smoothieRO.isSynced = true
-            
             smoothieRO.title = smoothie.title
             smoothieRO.url = smoothie.url
             smoothieRO.text = smoothie.description ?? ""

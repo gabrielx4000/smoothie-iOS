@@ -31,10 +31,15 @@
 		A20DD36C28D7FE0900CC08C5 /* SmoothieEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD36928D7FE0900CC08C5 /* SmoothieEndpointTests.swift */; };
 		A20DD36D28D7FE0900CC08C5 /* FruitsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD36A28D7FE0900CC08C5 /* FruitsEndpointTests.swift */; };
 		A20DD37028D7FE6800CC08C5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A20DD36F28D7FE6800CC08C5 /* RealmSwift */; };
+		A21E9DD228E73E99006A6EB8 /* SmoothieEndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DD128E73E99006A6EB8 /* SmoothieEndpointMock.swift */; };
+		A21E9DD428E73ECB006A6EB8 /* SmoothiesEndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DD328E73ECB006A6EB8 /* SmoothiesEndpointMock.swift */; };
+		A21E9DD628E73F15006A6EB8 /* FruitsEndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DD528E73F15006A6EB8 /* FruitsEndpointMock.swift */; };
 		A22A6A5D28DB73E400F64B20 /* FruitNutritionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A6A5C28DB73E400F64B20 /* FruitNutritionDTO.swift */; };
 		A2716E5628DFE58100F11E75 /* DataTestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2716E5528DFE58100F11E75 /* DataTestsHelper.swift */; };
 		A281E1C528D9424A0027B358 /* RealmSmoothiesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD33828D7FD2900CC08C5 /* RealmSmoothiesStorage.swift */; };
+		A28E592F28E1298400D517A2 /* SmoothiesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28E592E28E1298400D517A2 /* SmoothiesRepositoryTests.swift */; };
 		A2AA0C8528D801680036ED1C /* RealmFruitsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA0C8428D801680036ED1C /* RealmFruitsStorageTests.swift */; };
+		A2C66F4E28E523330094FF61 /* ErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C66F4D28E523330094FF61 /* ErrorDTO.swift */; };
 		A2C9819B28D815A8006E5918 /* SmoothieNutritionRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9819A28D815A8006E5918 /* SmoothieNutritionRO.swift */; };
 		A2C9819D28D815D7006E5918 /* SmoothieRecommendedRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9819C28D815D7006E5918 /* SmoothieRecommendedRO.swift */; };
 		A2C9819F28D81607006E5918 /* SmoothieStepRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9819E28D81607006E5918 /* SmoothieStepRO.swift */; };
@@ -42,6 +47,7 @@
 		A2C981A328D81662006E5918 /* SmoothieRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C981A228D81662006E5918 /* SmoothieRO.swift */; };
 		A2D19E0828DE89760010AFBF /* FruitsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D19E0728DE89760010AFBF /* FruitsRepository.swift */; };
 		A2D19E0B28DE8E260010AFBF /* FruitsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D19E0A28DE8E260010AFBF /* FruitsRepositoryTests.swift */; };
+		A2DE279B28E0002F0016EDEA /* SmoothiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DE279A28E0002F0016EDEA /* SmoothiesRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,9 +113,14 @@
 		A20DD36828D7FE0900CC08C5 /* SmoothiesEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothiesEndpointTests.swift; sourceTree = "<group>"; };
 		A20DD36928D7FE0900CC08C5 /* SmoothieEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieEndpointTests.swift; sourceTree = "<group>"; };
 		A20DD36A28D7FE0900CC08C5 /* FruitsEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsEndpointTests.swift; sourceTree = "<group>"; };
+		A21E9DD128E73E99006A6EB8 /* SmoothieEndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieEndpointMock.swift; sourceTree = "<group>"; };
+		A21E9DD328E73ECB006A6EB8 /* SmoothiesEndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothiesEndpointMock.swift; sourceTree = "<group>"; };
+		A21E9DD528E73F15006A6EB8 /* FruitsEndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsEndpointMock.swift; sourceTree = "<group>"; };
 		A22A6A5C28DB73E400F64B20 /* FruitNutritionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutritionDTO.swift; sourceTree = "<group>"; };
 		A2716E5528DFE58100F11E75 /* DataTestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTestsHelper.swift; sourceTree = "<group>"; };
+		A28E592E28E1298400D517A2 /* SmoothiesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothiesRepositoryTests.swift; sourceTree = "<group>"; };
 		A2AA0C8428D801680036ED1C /* RealmFruitsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFruitsStorageTests.swift; sourceTree = "<group>"; };
+		A2C66F4D28E523330094FF61 /* ErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDTO.swift; sourceTree = "<group>"; };
 		A2C9819A28D815A8006E5918 /* SmoothieNutritionRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieNutritionRO.swift; sourceTree = "<group>"; };
 		A2C9819C28D815D7006E5918 /* SmoothieRecommendedRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRecommendedRO.swift; sourceTree = "<group>"; };
 		A2C9819E28D81607006E5918 /* SmoothieStepRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieStepRO.swift; sourceTree = "<group>"; };
@@ -117,6 +128,7 @@
 		A2C981A228D81662006E5918 /* SmoothieRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRO.swift; sourceTree = "<group>"; };
 		A2D19E0728DE89760010AFBF /* FruitsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsRepository.swift; sourceTree = "<group>"; };
 		A2D19E0A28DE8E260010AFBF /* FruitsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsRepositoryTests.swift; sourceTree = "<group>"; };
+		A2DE279A28E0002F0016EDEA /* SmoothiesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothiesRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +211,7 @@
 			children = (
 				A22A6A5E28DB740C00F64B20 /* Fruit */,
 				A203323028DB736A00BAE760 /* Smoothie */,
+				A2C66F4D28E523330094FF61 /* ErrorDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -237,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				A2D19E0728DE89760010AFBF /* FruitsRepository.swift */,
+				A2DE279A28E0002F0016EDEA /* SmoothiesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -288,6 +302,16 @@
 			path = NetworkingTests;
 			sourceTree = "<group>";
 		};
+		A21E9DCE28E73E12006A6EB8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A21E9DD128E73E99006A6EB8 /* SmoothieEndpointMock.swift */,
+				A21E9DD528E73F15006A6EB8 /* FruitsEndpointMock.swift */,
+				A21E9DD328E73ECB006A6EB8 /* SmoothiesEndpointMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		A22A6A5E28DB740C00F64B20 /* Fruit */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,7 +336,9 @@
 		A2D19E0928DE8DD10010AFBF /* RepositoriesTests */ = {
 			isa = PBXGroup;
 			children = (
+				A21E9DCE28E73E12006A6EB8 /* Mocks */,
 				A2D19E0A28DE8E260010AFBF /* FruitsRepositoryTests.swift */,
+				A28E592E28E1298400D517A2 /* SmoothiesRepositoryTests.swift */,
 			);
 			path = RepositoriesTests;
 			sourceTree = "<group>";
@@ -459,6 +485,7 @@
 				A2C981A328D81662006E5918 /* SmoothieRO.swift in Sources */,
 				A20DD34028D7FD2900CC08C5 /* SmoothiesEndpoint.swift in Sources */,
 				A2C9819D28D815D7006E5918 /* SmoothieRecommendedRO.swift in Sources */,
+				A2DE279B28E0002F0016EDEA /* SmoothiesRepository.swift in Sources */,
 				A20DD33B28D7FD2900CC08C5 /* FruitDTO.swift in Sources */,
 				A20DD33C28D7FD2900CC08C5 /* SmoothieShortDTO.swift in Sources */,
 				A203322E28DB730100BAE760 /* SmoothieStepDTO.swift in Sources */,
@@ -474,6 +501,7 @@
 				A203322F28DB730100BAE760 /* SmoothieRecommendedDTO.swift in Sources */,
 				A20DD34628D7FD2900CC08C5 /* FruitRO.swift in Sources */,
 				A22A6A5D28DB73E400F64B20 /* FruitNutritionDTO.swift in Sources */,
+				A2C66F4E28E523330094FF61 /* ErrorDTO.swift in Sources */,
 				A2C9819F28D81607006E5918 /* SmoothieStepRO.swift in Sources */,
 				A20DD34328D7FD2900CC08C5 /* NetworkError.swift in Sources */,
 				A20DD33D28D7FD2900CC08C5 /* SmoothieCompleteDTO.swift in Sources */,
@@ -486,13 +514,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A21E9DD228E73E99006A6EB8 /* SmoothieEndpointMock.swift in Sources */,
 				A20DD36C28D7FE0900CC08C5 /* SmoothieEndpointTests.swift in Sources */,
 				A20DD36D28D7FE0900CC08C5 /* FruitsEndpointTests.swift in Sources */,
 				A2AA0C8528D801680036ED1C /* RealmFruitsStorageTests.swift in Sources */,
 				A203322628DB559100BAE760 /* RealmSmoothiesStorageTests.swift in Sources */,
+				A21E9DD628E73F15006A6EB8 /* FruitsEndpointMock.swift in Sources */,
 				A2D19E0B28DE8E260010AFBF /* FruitsRepositoryTests.swift in Sources */,
+				A21E9DD428E73ECB006A6EB8 /* SmoothiesEndpointMock.swift in Sources */,
 				A2716E5628DFE58100F11E75 /* DataTestsHelper.swift in Sources */,
 				A20DD36B28D7FE0900CC08C5 /* SmoothiesEndpointTests.swift in Sources */,
+				A28E592F28E1298400D517A2 /* SmoothiesRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
