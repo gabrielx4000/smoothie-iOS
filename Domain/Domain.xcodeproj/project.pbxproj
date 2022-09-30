@@ -17,6 +17,8 @@
 		A21E9DD928E74070006A6EB8 /* GetFruitsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DD828E74070006A6EB8 /* GetFruitsUseCaseTests.swift */; };
 		A21E9DDB28E743F6006A6EB8 /* DomainTestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DDA28E743F6006A6EB8 /* DomainTestsHelper.swift */; };
 		A21E9DDE28E74C0A006A6EB8 /* FruitsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DDD28E74C0A006A6EB8 /* FruitsRepositoryMock.swift */; };
+		A21E9DE128E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE028E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift */; };
+		A21E9DE328E7508A006A6EB8 /* SmoothiesRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE228E7508A006A6EB8 /* SmoothiesRepositoryMock.swift */; };
 		A281E1C728D943D90027B358 /* FruitNutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1C628D943D90027B358 /* FruitNutrition.swift */; };
 		A281E1C928D9443E0027B358 /* SmoothieStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1C828D9443E0027B358 /* SmoothieStep.swift */; };
 		A281E1CB28D9446A0027B358 /* SmoothieRecommended.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1CA28D9446A0027B358 /* SmoothieRecommended.swift */; };
@@ -45,6 +47,8 @@
 		A21E9DD828E74070006A6EB8 /* GetFruitsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFruitsUseCaseTests.swift; sourceTree = "<group>"; };
 		A21E9DDA28E743F6006A6EB8 /* DomainTestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTestsHelper.swift; sourceTree = "<group>"; };
 		A21E9DDD28E74C0A006A6EB8 /* FruitsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsRepositoryMock.swift; sourceTree = "<group>"; };
+		A21E9DE028E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothiesUseCaseTests.swift; sourceTree = "<group>"; };
+		A21E9DE228E7508A006A6EB8 /* SmoothiesRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothiesRepositoryMock.swift; sourceTree = "<group>"; };
 		A281E1C628D943D90027B358 /* FruitNutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrition.swift; sourceTree = "<group>"; };
 		A281E1C828D9443E0027B358 /* SmoothieStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieStep.swift; sourceTree = "<group>"; };
 		A281E1CA28D9446A0027B358 /* SmoothieRecommended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRecommended.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A21E9DDD28E74C0A006A6EB8 /* FruitsRepositoryMock.swift */,
+				A21E9DE228E7508A006A6EB8 /* SmoothiesRepositoryMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				A21E9DD828E74070006A6EB8 /* GetFruitsUseCaseTests.swift */,
+				A21E9DE028E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift */,
 			);
 			path = UseCasesTests;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A21E9DE128E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift in Sources */,
 				A21E9DD928E74070006A6EB8 /* GetFruitsUseCaseTests.swift in Sources */,
 				A21E9DDE28E74C0A006A6EB8 /* FruitsRepositoryMock.swift in Sources */,
+				A21E9DE328E7508A006A6EB8 /* SmoothiesRepositoryMock.swift in Sources */,
 				A21E9DDB28E743F6006A6EB8 /* DomainTestsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

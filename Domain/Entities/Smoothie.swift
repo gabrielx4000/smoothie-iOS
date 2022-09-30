@@ -48,3 +48,11 @@ public struct Smoothie {
     }
     
 }
+
+extension Smoothie: Equatable {
+
+    public static func == (lhs: Smoothie, rhs: Smoothie) -> Bool {
+        return lhs.url == rhs.url
+    }
+    
+}
