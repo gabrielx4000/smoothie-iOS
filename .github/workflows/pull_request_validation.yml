@@ -24,8 +24,8 @@ jobs:
 
       - name: Set Xcode version
         run: |
-        xcode-select -s /Applications/Xcode_14.0.1.app
-
+          xcode-select -s /Applications/Xcode_14.0.1.app
+      
       - name: Test
         run: |
           make test \
