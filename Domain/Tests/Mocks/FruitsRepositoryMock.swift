@@ -4,7 +4,9 @@ import Foundation
 
 class FruitsRepositoryMock: FruitsRepositoryInterface {
     
-    let subject: CurrentValueSubject<[Fruit], Error> = CurrentValueSubject([DomainTestsHelper.makeApple(), DomainTestsHelper.makeBanana()])
+    var values = [DomainTestsHelper.makeBanana(), DomainTestsHelper.makeApple()]
+    
+    lazy var subject: CurrentValueSubject<[Fruit], Error> = CurrentValueSubject(values)
     
     func getPublisher() -> AnyPublisher<[Fruit], Error> {
         subject.eraseToAnyPublisher()

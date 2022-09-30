@@ -16,7 +16,12 @@ public class GetFruitsUseCase: GetFruitsUseCaseProtocol {
     }
     
     public func start() -> AnyPublisher<[Fruit], Error> {
-        return repository.getPublisher()
+        return repository
+            .getPublisher()
+            .map { fruits in
+                fruits.sorted(by: { $0.name.caseInsensitiveCompare($1.name) == .orderedAscending })
+            }
+            .eraseToAnyPublisher()
     }
     
 }

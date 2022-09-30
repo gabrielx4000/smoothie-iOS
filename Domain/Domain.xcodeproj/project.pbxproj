@@ -21,6 +21,8 @@
 		A21E9DE328E7508A006A6EB8 /* SmoothiesRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE228E7508A006A6EB8 /* SmoothiesRepositoryMock.swift */; };
 		A21E9DE528E753B0006A6EB8 /* GetSmoothieUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE428E753B0006A6EB8 /* GetSmoothieUseCase.swift */; };
 		A21E9DE728E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE628E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift */; };
+		A22A376828E775FC009F58AC /* GetSmoothieTagsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A376728E775FC009F58AC /* GetSmoothieTagsUseCase.swift */; };
+		A22A376A28E77F40009F58AC /* GetSmoothieTagsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A376928E77F40009F58AC /* GetSmoothieTagsUseCaseTests.swift */; };
 		A281E1C728D943D90027B358 /* FruitNutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1C628D943D90027B358 /* FruitNutrition.swift */; };
 		A281E1C928D9443E0027B358 /* SmoothieStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1C828D9443E0027B358 /* SmoothieStep.swift */; };
 		A281E1CB28D9446A0027B358 /* SmoothieRecommended.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1CA28D9446A0027B358 /* SmoothieRecommended.swift */; };
@@ -53,6 +55,8 @@
 		A21E9DE228E7508A006A6EB8 /* SmoothiesRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothiesRepositoryMock.swift; sourceTree = "<group>"; };
 		A21E9DE428E753B0006A6EB8 /* GetSmoothieUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothieUseCase.swift; sourceTree = "<group>"; };
 		A21E9DE628E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothieUseCaseTests.swift; sourceTree = "<group>"; };
+		A22A376728E775FC009F58AC /* GetSmoothieTagsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothieTagsUseCase.swift; sourceTree = "<group>"; };
+		A22A376928E77F40009F58AC /* GetSmoothieTagsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothieTagsUseCaseTests.swift; sourceTree = "<group>"; };
 		A281E1C628D943D90027B358 /* FruitNutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrition.swift; sourceTree = "<group>"; };
 		A281E1C828D9443E0027B358 /* SmoothieStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieStep.swift; sourceTree = "<group>"; };
 		A281E1CA28D9446A0027B358 /* SmoothieRecommended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRecommended.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				A20DD2FA28D7FB4000CC08C5 /* GetFruitsUseCase.swift */,
 				A20DD2FB28D7FB4000CC08C5 /* GetSmoothiesUseCase.swift */,
 				A21E9DE428E753B0006A6EB8 /* GetSmoothieUseCase.swift */,
+				A22A376728E775FC009F58AC /* GetSmoothieTagsUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A21E9DD828E74070006A6EB8 /* GetFruitsUseCaseTests.swift */,
+				A22A376928E77F40009F58AC /* GetSmoothieTagsUseCaseTests.swift */,
 				A21E9DE628E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift */,
 				A21E9DE028E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift */,
 			);
@@ -272,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21E9DE128E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift in Sources */,
+				A22A376A28E77F40009F58AC /* GetSmoothieTagsUseCaseTests.swift in Sources */,
 				A21E9DD928E74070006A6EB8 /* GetFruitsUseCaseTests.swift in Sources */,
 				A21E9DE728E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift in Sources */,
 				A21E9DDE28E74C0A006A6EB8 /* FruitsRepositoryMock.swift in Sources */,
@@ -295,6 +302,7 @@
 				A20DD2FD28D7FB4000CC08C5 /* FruitsRepositoryInterface.swift in Sources */,
 				A20DD2FC28D7FB4000CC08C5 /* SmoothiesRepositoryInterface.swift in Sources */,
 				A20DD30028D7FB4000CC08C5 /* GetFruitsUseCase.swift in Sources */,
+				A22A376828E775FC009F58AC /* GetSmoothieTagsUseCase.swift in Sources */,
 				A281E1C728D943D90027B358 /* FruitNutrition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -53,4 +53,19 @@ struct DomainTestsHelper {
         )
     }
     
+    static func makeAcaiSmoothie() -> Smoothie {
+        return Smoothie(
+            title: "Acai bowl",
+            url: "https://www.bbcgoodfood.com/recipes/acai-bowl",
+            thumbnail: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/acai-bowl-e1d7cbc.jpg",
+            rating: "4.5",
+            tags: [
+                "gluten-free",
+                "healthy",
+                "vegan",
+                "vegetarian"
+            ]
+        )
+    }
+    
 }

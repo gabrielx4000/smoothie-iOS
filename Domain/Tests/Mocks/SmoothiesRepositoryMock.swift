@@ -4,7 +4,9 @@ import Foundation
 
 class SmoothiesRepositoryMock: SmoothiesRepositoryInterface {
     
-    lazy var subject: CurrentValueSubject<[Smoothie], Error> = CurrentValueSubject([DomainTestsHelper.makeBananaSmoothie()])
+    var values = [DomainTestsHelper.makeBananaSmoothie()]
+    
+    lazy var subject: CurrentValueSubject<[Smoothie], Error> = CurrentValueSubject(values)
     
     func getPublisher() -> AnyPublisher<[Smoothie], Error> {
         return subject.eraseToAnyPublisher()

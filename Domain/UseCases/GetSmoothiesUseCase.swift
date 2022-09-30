@@ -16,7 +16,12 @@ public class GetSmoothiesUseCase: GetSmoothiesUseCaseProcol {
     }
     
     public func start() -> AnyPublisher<[Smoothie], Error> {
-        return repository.getPublisher()
+        return repository
+            .getPublisher()
+            .map { smoothies in
+                smoothies.sorted(by: { $0.title.caseInsensitiveCompare($1.title) == .orderedAscending})
+            }
+            .eraseToAnyPublisher()
     }
     
 }
