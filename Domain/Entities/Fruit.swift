@@ -24,3 +24,11 @@ public struct Fruit {
     }
     
 }
+
+extension Fruit: Equatable {
+
+    public static func == (lhs: Fruit, rhs: Fruit) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+}
