@@ -1,9 +1,12 @@
+import Core
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    var mainCoordinator: MainCoordinator?
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
         
@@ -12,12 +15,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController()
         
         window.rootViewController = navigationController
-        self.window = window
         window.makeKeyAndVisible()
+        self.window = window
         
-        let vc = ViewController()
-        
-        navigationController.pushViewController(vc, animated: true)
+        let mainCoordinator = MainCoordinator(navigationController: navigationController)
+        mainCoordinator.start()
+        self.mainCoordinator = mainCoordinator
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
