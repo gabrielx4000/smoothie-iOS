@@ -12,9 +12,11 @@ class SmoothiesRepositoryMock: SmoothiesRepositoryInterface {
     
     func fetchSmoothie(_ title: String) async -> Smoothie {
         return await withCheckedContinuation { continuation in
-            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
-                timer.invalidate()
-                continuation.resume(returning: DomainTestsHelper.makeBananaSmoothie())
+            DispatchQueue.main.async {
+                Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
+                    timer.invalidate()
+                    continuation.resume(returning: DomainTestsHelper.makeBananaSmoothie())
+                }
             }
         }
     }
