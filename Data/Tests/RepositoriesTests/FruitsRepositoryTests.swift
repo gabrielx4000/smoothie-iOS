@@ -5,20 +5,15 @@ import XCTest
 final class FruitsRepositoryTests: XCTestCase {
 
     var sut: FruitsRepository!
-    var endpoint: FruitsEndpointMock!
-    let realm = try! Realm()
+    var endpoint: MockFruitsEndpoint!
+    var storage: MockFruitsStorage!
     
     override func setUp() {
-        endpoint = FruitsEndpointMock()
-        sut = FruitsRepository(endpoint: endpoint, storage: RealmFruitsStorage())
+        endpoint = MockFruitsEndpoint()
+        storage = MockFruitsStorage()
+        sut = FruitsRepository(endpoint: endpoint, storage: storage)
     }
 
-    override func tearDown() {
-        try! realm.write {
-            realm.deleteAll()
-        }
-    }
-    
     func testGetPublisherGivenStorageIsEmpty() {
         let expectation = expectation(description: "testGetPublisherGivenStorageIsEmpty")
 
@@ -33,9 +28,9 @@ final class FruitsRepositoryTests: XCTestCase {
             .sink { fruits in
                 expectation.fulfill()
                 if sinkCount == 0 {
-                    XCTAssertEqual(fruits.count, 0)
+                    XCTAssertEqual(0, fruits.count)
                 } else {
-                    XCTAssertEqual(fruits.count, 1)
+                    XCTAssertEqual(1, fruits.count)
                 }
                 sinkCount += 1
             }
@@ -46,12 +41,8 @@ final class FruitsRepositoryTests: XCTestCase {
     }
     
     func testGetPublisherGivenStorageHasElements() {
-        let banana = DataTestsHelper.makeBananaRO()
-
-        try! realm.write {
-            realm.add(banana)
-        }
-
+        storage.values = [DataTestsHelper.makeBanana()]
+        
         let expectation = expectation(description: "testGetPublisherGivenStorageHasElementsExpectation")
 
         expectation.expectedFulfillmentCount = 2
@@ -65,9 +56,9 @@ final class FruitsRepositoryTests: XCTestCase {
             .sink { fruits in
                 expectation.fulfill()
                 if sinkCount == 0 {
-                    XCTAssertEqual(fruits.count, 1)
+                    XCTAssertEqual(1, fruits.count)
                 } else {
-                    XCTAssertEqual(fruits.count, 2)
+                    XCTAssertEqual(2, fruits.count)
                 }
                 sinkCount += 1
             }
@@ -78,11 +69,7 @@ final class FruitsRepositoryTests: XCTestCase {
     }
 
     func testGetPublisherGivenStorageHasSameElement() {
-        let apple = DataTestsHelper.makeAppleRO()
-
-        try! realm.write {
-            realm.add(apple)
-        }
+        storage.values = [DataTestsHelper.makeApple()]
 
         let expectation = expectation(description: "testGetPublisherGivenStorageHasSameElementExpectation")
 
@@ -92,7 +79,7 @@ final class FruitsRepositoryTests: XCTestCase {
             .assertNoFailure()
             .sink { fruits in
                 expectation.fulfill()
-                XCTAssertEqual(fruits.count, 1)
+                XCTAssertEqual(1, fruits.count)
             }
 
         wait(for: [expectation], timeout: 10)

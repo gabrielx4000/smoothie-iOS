@@ -1,7 +1,7 @@
 @testable import Data
 import Foundation
 
-class FruitsEndpointMock: FruitsEndpointProtocol {
+class MockFruitsEndpoint: FruitsEndpointProtocol {
     
     var values = [FruitDTO]()
     

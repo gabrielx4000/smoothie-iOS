@@ -16,9 +16,9 @@
 		A20DD30A28D7FB6400CC08C5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A298AD0528D7FAEE0045DD73 /* Domain.framework */; };
 		A21E9DD928E74070006A6EB8 /* GetFruitsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DD828E74070006A6EB8 /* GetFruitsUseCaseTests.swift */; };
 		A21E9DDB28E743F6006A6EB8 /* DomainTestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DDA28E743F6006A6EB8 /* DomainTestsHelper.swift */; };
-		A21E9DDE28E74C0A006A6EB8 /* FruitsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DDD28E74C0A006A6EB8 /* FruitsRepositoryMock.swift */; };
+		A21E9DDE28E74C0A006A6EB8 /* MockFruitsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DDD28E74C0A006A6EB8 /* MockFruitsRepository.swift */; };
 		A21E9DE128E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE028E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift */; };
-		A21E9DE328E7508A006A6EB8 /* SmoothiesRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE228E7508A006A6EB8 /* SmoothiesRepositoryMock.swift */; };
+		A21E9DE328E7508A006A6EB8 /* MockSmoothiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE228E7508A006A6EB8 /* MockSmoothiesRepository.swift */; };
 		A21E9DE528E753B0006A6EB8 /* GetSmoothieUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE428E753B0006A6EB8 /* GetSmoothieUseCase.swift */; };
 		A21E9DE728E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E9DE628E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift */; };
 		A22A376828E775FC009F58AC /* GetSmoothieTagsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A376728E775FC009F58AC /* GetSmoothieTagsUseCase.swift */; };
@@ -50,9 +50,9 @@
 		A20DD30628D7FB6400CC08C5 /* DomainUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21E9DD828E74070006A6EB8 /* GetFruitsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFruitsUseCaseTests.swift; sourceTree = "<group>"; };
 		A21E9DDA28E743F6006A6EB8 /* DomainTestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTestsHelper.swift; sourceTree = "<group>"; };
-		A21E9DDD28E74C0A006A6EB8 /* FruitsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsRepositoryMock.swift; sourceTree = "<group>"; };
+		A21E9DDD28E74C0A006A6EB8 /* MockFruitsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFruitsRepository.swift; sourceTree = "<group>"; };
 		A21E9DE028E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothiesUseCaseTests.swift; sourceTree = "<group>"; };
-		A21E9DE228E7508A006A6EB8 /* SmoothiesRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothiesRepositoryMock.swift; sourceTree = "<group>"; };
+		A21E9DE228E7508A006A6EB8 /* MockSmoothiesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSmoothiesRepository.swift; sourceTree = "<group>"; };
 		A21E9DE428E753B0006A6EB8 /* GetSmoothieUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothieUseCase.swift; sourceTree = "<group>"; };
 		A21E9DE628E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothieUseCaseTests.swift; sourceTree = "<group>"; };
 		A22A376728E775FC009F58AC /* GetSmoothieTagsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothieTagsUseCase.swift; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 		A21E9DDC28E74BF1006A6EB8 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				A21E9DDD28E74C0A006A6EB8 /* FruitsRepositoryMock.swift */,
-				A21E9DE228E7508A006A6EB8 /* SmoothiesRepositoryMock.swift */,
+				A21E9DDD28E74C0A006A6EB8 /* MockFruitsRepository.swift */,
+				A21E9DE228E7508A006A6EB8 /* MockSmoothiesRepository.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -281,8 +281,8 @@
 				A22A376A28E77F40009F58AC /* GetSmoothieTagsUseCaseTests.swift in Sources */,
 				A21E9DD928E74070006A6EB8 /* GetFruitsUseCaseTests.swift in Sources */,
 				A21E9DE728E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift in Sources */,
-				A21E9DDE28E74C0A006A6EB8 /* FruitsRepositoryMock.swift in Sources */,
-				A21E9DE328E7508A006A6EB8 /* SmoothiesRepositoryMock.swift in Sources */,
+				A21E9DDE28E74C0A006A6EB8 /* MockFruitsRepository.swift in Sources */,
+				A21E9DE328E7508A006A6EB8 /* MockSmoothiesRepository.swift in Sources */,
 				A21E9DDB28E743F6006A6EB8 /* DomainTestsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,10 +1,13 @@
 import Foundation
+import Reachability
 
 public class NetworkHandler {
     
+    lazy var reachability = Reachability()
+    
     public func start<T: Decodable>(_ type: T.Type, request: URLRequest) async throws -> T {
         return try await withCheckedThrowingContinuation { continuation in
-            URLSession.shared.dataTask(with: request) { data, response, error in
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 if let error = error {
                     continuation.resume(throwing: error)
                 } else if let data = data {
@@ -18,7 +21,17 @@ public class NetworkHandler {
                 } else {
                     continuation.resume(throwing: NetworkError.unknown)
                 }
-            }.resume()
+            }
+            
+            self.reachability.publisher
+                .subscribe(on: DispatchQueue.main)
+                .sink { path in
+                    if path.isReachable {
+                        task.resume()
+                    } else {
+                        continuation.resume(throwing: NetworkError.noInternet)
+                    }
+                }.cancel()
         }
     }
     

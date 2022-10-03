@@ -2,7 +2,7 @@ import Domain
 import Foundation
 import RealmSwift
 
-public class RealmSmoothiesStorage {
+public class RealmSmoothiesStorage: SmoothiesStorageProtocol {
  
     private let realm: Realm?
     

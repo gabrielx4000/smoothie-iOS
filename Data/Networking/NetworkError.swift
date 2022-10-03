@@ -4,4 +4,5 @@ enum NetworkError: Error {
     case unknown
     case urlParsing
     case notFound
+    case noInternet
 }
