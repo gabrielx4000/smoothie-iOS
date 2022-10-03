@@ -1,3 +1,4 @@
+import Presentation
 import UIKit
 
 public class MainCoordinator: CoordinatorProtocol {
@@ -11,10 +12,15 @@ public class MainCoordinator: CoordinatorProtocol {
     }
     
     public func start() {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .purple
+        showConnection()
+    }
+    
+    private func showConnection() {
+        navigationController.popToRootViewController(animated: true)
         
-        navigationController.pushViewController(vc, animated: false)
+        let connectionViewController = ConnectionViewController(viewModel: ConnectionViewModel())
+        
+        navigationController.pushViewController(connectionViewController, animated: false)
     }
     
 }

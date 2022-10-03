@@ -4,7 +4,7 @@ import XCTest
 final class GetSmoothieTagsUseCaseTests: XCTestCase {
 
     var sut: GetSmoothieTagsUseCase!
-    let repository = SmoothiesRepositoryMock()
+    let repository = MockSmoothiesRepository()
     
     override func setUp() {
         sut = GetSmoothieTagsUseCase(repository: repository)

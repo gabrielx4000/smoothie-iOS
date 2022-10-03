@@ -8,13 +8,13 @@ public class SmoothiesRepository: SmoothiesRepositoryInterface {
     
     private let smoothieEndpoint: SmoothieEndpointProtocol
     
-    private let storage: RealmSmoothiesStorage
+    private let storage: SmoothiesStorageProtocol
     
     private lazy var subject: CurrentValueSubject<[Smoothie], Error> = CurrentValueSubject<[Smoothie], Error>(storage.fetchSmoothies())
     
     private lazy var publisher: AnyPublisher<[Smoothie], Error> = subject.eraseToAnyPublisher()
     
-    public init(smoothiesEndpoint: SmoothiesEndpointProtocol, smoothieEndpoint: SmoothieEndpointProtocol, storage: RealmSmoothiesStorage) {
+    public init(smoothiesEndpoint: SmoothiesEndpointProtocol, smoothieEndpoint: SmoothieEndpointProtocol, storage: SmoothiesStorageProtocol) {
         self.smoothieEndpoint = smoothieEndpoint
         self.smoothiesEndpoint = smoothiesEndpoint
         self.storage = storage

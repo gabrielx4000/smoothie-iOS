@@ -1,7 +1,7 @@
 @testable import Data
 import Foundation
 
-class SmoothiesEndpointMock: SmoothiesEndpointProtocol {
+class MockSmoothiesEndpoint: SmoothiesEndpointProtocol {
     
     var values = [SmoothieShortDTO]()
     

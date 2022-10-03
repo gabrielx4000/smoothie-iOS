@@ -5,21 +5,16 @@ import XCTest
 final class SmoothiesRepositoryTests: XCTestCase {
 
     var sut: SmoothiesRepository!
-    var smoothiesEndpoint: SmoothiesEndpointMock!
-    var smoothieEndpoint: SmoothieEndpointMock!
-    
-    let realm = try! Realm()
+    var smoothiesEndpoint: MockSmoothiesEndpoint!
+    var smoothieEndpoint: MockSmoothieEndpoint!
+    var storage: MockSmoothiesStorage!
     
     override func setUp() {
-        smoothiesEndpoint = SmoothiesEndpointMock()
-        smoothieEndpoint = SmoothieEndpointMock()
-        sut = SmoothiesRepository(smoothiesEndpoint: smoothiesEndpoint, smoothieEndpoint: smoothieEndpoint, storage: RealmSmoothiesStorage())
-    }
-
-    override func tearDown() {
-        try! realm.write {
-            realm.deleteAll()
-        }
+        smoothiesEndpoint = MockSmoothiesEndpoint()
+        smoothieEndpoint = MockSmoothieEndpoint()
+        storage = MockSmoothiesStorage()
+        
+        sut = SmoothiesRepository(smoothiesEndpoint: smoothiesEndpoint, smoothieEndpoint: smoothieEndpoint, storage: storage)
     }
     
     func testGetPublisherGivenStorageIsEmpty() {
@@ -59,11 +54,7 @@ final class SmoothiesRepositoryTests: XCTestCase {
     }
     
     func testFetchSmoothieGivenStorageHasData() async {
-        DispatchQueue.main.sync {
-            try! realm.write {
-                realm.add(SmoothieRO(smoothie: DataTestsHelper.makeShortBananaSmoothieDTO().toDomain()))
-            }
-        }
+        storage.values = [DataTestsHelper.makeShortBananaSmoothieDTO().toDomain()]
         
         smoothieEndpoint.values = [DataTestsHelper.makeBananaSmoothieDTO()]
         
@@ -73,11 +64,7 @@ final class SmoothiesRepositoryTests: XCTestCase {
     }
     
     func testFetchSmoothieGivenStorageHasCompleteData() async {
-        DispatchQueue.main.sync {
-            try! realm.write {
-                realm.add(SmoothieRO(smoothie: DataTestsHelper.makeBananaSmoothieDTO().toDomain()))
-            }
-        }
+        storage.values = [DataTestsHelper.makeBananaSmoothieDTO().toDomain()]
         
         smoothieEndpoint.values = [DataTestsHelper.makeBananaSmoothieDTO()]
         
