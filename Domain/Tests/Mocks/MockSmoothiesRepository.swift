@@ -2,7 +2,7 @@ import Combine
 import Domain
 import Foundation
 
-class SmoothiesRepositoryMock: SmoothiesRepositoryInterface {
+class MockSmoothiesRepository: SmoothiesRepositoryInterface {
     
     var values = [DomainTestsHelper.makeBananaSmoothie()]
     

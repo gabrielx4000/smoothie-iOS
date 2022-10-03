@@ -2,7 +2,7 @@ import Combine
 @testable import Domain
 import Foundation
 
-class FruitsRepositoryMock: FruitsRepositoryInterface {
+class MockFruitsRepository: FruitsRepositoryInterface {
     
     var values = [DomainTestsHelper.makeBanana(), DomainTestsHelper.makeApple()]
     

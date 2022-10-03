@@ -6,7 +6,7 @@ final class GetFruitsUseCaseTests: XCTestCase {
     var sut: GetFruitsUseCase!
     
     override func setUp() {
-        sut = GetFruitsUseCase(repository: FruitsRepositoryMock())
+        sut = GetFruitsUseCase(repository: MockFruitsRepository())
     }
     
     func testStartGivenSuccess() {

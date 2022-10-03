@@ -5,9 +5,10 @@ Template iOS app using Clean Architecture and MVVM.
 ### Application
 ### Core
 ### Data
-### Domain
 #### Dependencies
-- [Realm](https://github.com/realm/realm-swift): Realm is a mobile database that runs directly inside phones, tablets or wearables.
+ - [Reachability](https://github.com/Alecrim/Reachability): A new, clean and lean network interface reachability library written in Swift.
+ - [Realm](https://github.com/realm/realm-swift): Realm is a mobile database that runs directly inside phones, tablets or wearables.
+### Domain
 ### Presentation
 #### Dependencies
 - [Kingfisher](https://github.com/onevcat/Kingfisher): Kingfisher is a powerful, pure-Swift library for downloading and caching images from the web.

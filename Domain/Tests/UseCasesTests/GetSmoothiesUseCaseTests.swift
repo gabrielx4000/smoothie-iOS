@@ -6,7 +6,7 @@ final class GetSmoothiesUseCaseTests: XCTestCase {
     var sut: GetSmoothiesUseCase!
 
     override func setUp() {
-        sut = GetSmoothiesUseCase(repository: SmoothiesRepositoryMock())
+        sut = GetSmoothiesUseCase(repository: MockSmoothiesRepository())
     }
     
     func testStartGivenSuccess() {
