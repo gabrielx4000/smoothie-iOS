@@ -17,7 +17,7 @@ public class ConnectionViewController: UIViewController {
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.textColor = Color.textPrimary.rawValue
-        titleLabel.text = "No internet connetion"
+        titleLabel.text = "connection_screen_title".localized
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
         titleLabel.textAlignment = .center
@@ -28,7 +28,7 @@ public class ConnectionViewController: UIViewController {
     lazy var textLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.textColor = Color.textPrimary.rawValue
-        titleLabel.text = "Check your internet connection and try again."
+        titleLabel.text = "connection_screen_text".localized
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.boldSystemFont(ofSize: 14)
         titleLabel.textAlignment = .center
@@ -38,7 +38,7 @@ public class ConnectionViewController: UIViewController {
     
     lazy var button: UIButton = {
         let button = UIButton()
-        button.setTitle("Try again", for: .normal)
+        button.setTitle("connection_screen_button".localized, for: .normal)
         button.backgroundColor = Color.primary.rawValue
         button.tintColor = Color.actionTextOnColor.rawValue
         button.layer.cornerRadius = 12
