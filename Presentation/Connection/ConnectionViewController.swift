@@ -16,6 +16,7 @@ public class ConnectionViewController: UIViewController {
     
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
+        titleLabel.textColor = Color.textPrimary.rawValue
         titleLabel.text = "No internet connetion"
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
@@ -26,6 +27,7 @@ public class ConnectionViewController: UIViewController {
     
     lazy var textLabel: UILabel = {
         let titleLabel = UILabel()
+        titleLabel.textColor = Color.textPrimary.rawValue
         titleLabel.text = "Check your internet connection and try again."
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.boldSystemFont(ofSize: 14)
@@ -37,8 +39,8 @@ public class ConnectionViewController: UIViewController {
     lazy var button: UIButton = {
         let button = UIButton()
         button.setTitle("Try again", for: .normal)
-        button.backgroundColor = .systemPink
-        button.tintColor = .white
+        button.backgroundColor = Color.primary.rawValue
+        button.tintColor = Color.actionTextOnColor.rawValue
         button.layer.cornerRadius = 12
         
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
@@ -66,7 +68,7 @@ public class ConnectionViewController: UIViewController {
             navigationController.isNavigationBarHidden = true
         }
         
-        view.backgroundColor = .white
+        view.backgroundColor = Color.backgroundPrimary.rawValue
         
         buildStackView()
         makeConstraints()
@@ -96,15 +98,20 @@ public class ConnectionViewController: UIViewController {
     }
     
     private func buildAnimationView() {
-        let animation = Animation.named("90478-disconnect", bundle: Bundle(for: ConnectionViewController.self))
-        animationView.animation = animation
+        animationView.animation = Animation.disconnect
         animationView.loopMode = .loop
         animationView.play()
     }
     
     @objc func didTapButton() {
+        let feedbackGenerator = UINotificationFeedbackGenerator()
+        
+        feedbackGenerator.prepare()
+        
         let animation = { [weak self] in
             guard let self = self else { return }
+            
+            feedbackGenerator.notificationOccurred(.success)
             
             self.button.transform = CGAffineTransform(scaleX: 0.99, y: 0.99)
         }
