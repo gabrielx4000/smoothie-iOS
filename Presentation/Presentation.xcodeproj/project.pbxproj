@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A21789D828ECB75C003E727F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A21789DA28ECB75C003E727F /* Localizable.strings */; };
+		A21789DD28ECB82B003E727F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21789DC28ECB82B003E727F /* String.swift */; };
+		A21789E528ECBDF8003E727F /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21789E428ECBDF8003E727F /* Bundle.swift */; };
 		A23F9CE928EC793B000D9E3D /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F9CE828EC793B000D9E3D /* Animation.swift */; };
 		A23F9CEC28EC7A89000D9E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23F9CEB28EC7A89000D9E3D /* Assets.xcassets */; };
 		A2F982EE28E7C09000ABA8CA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A2F982ED28E7C09000ABA8CA /* Kingfisher */; };
@@ -20,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A21789D928ECB75C003E727F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A21789DB28ECB75F003E727F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A21789DC28ECB82B003E727F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A21789E428ECBDF8003E727F /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		A23F9CE828EC793B000D9E3D /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		A23F9CEB28EC7A89000D9E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2F982E228E7BE4300ABA8CA /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +56,8 @@
 			children = (
 				A23F9CE828EC793B000D9E3D /* Animation.swift */,
 				A2FDEA8628EC98D6000B09A7 /* UIColor.swift */,
+				A21789DC28ECB82B003E727F /* String.swift */,
+				A21789E428ECBDF8003E727F /* Bundle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -77,6 +86,7 @@
 			children = (
 				A2F982F928E7C19C00ABA8CA /* 90478-disconnect.json */,
 				A23F9CEB28EC7A89000D9E3D /* Assets.xcassets */,
+				A21789DA28ECB75C003E727F /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -156,6 +166,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = A2F982D828E7BE4300ABA8CA;
 			packageReferences = (
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A23F9CEC28EC7A89000D9E3D /* Assets.xcassets in Resources */,
+				A21789D828ECB75C003E727F /* Localizable.strings in Resources */,
 				A2F982FA28E7C19C00ABA8CA /* 90478-disconnect.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A21789DD28ECB82B003E727F /* String.swift in Sources */,
+				A21789E528ECBDF8003E727F /* Bundle.swift in Sources */,
 				A2F982FF28E7D0EC00ABA8CA /* ConnectionViewModel.swift in Sources */,
 				A2FDEA8528EC9866000B09A7 /* Color.swift in Sources */,
 				A23F9CE928EC793B000D9E3D /* Animation.swift in Sources */,
@@ -198,6 +212,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A21789DA28ECB75C003E727F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A21789D928ECB75C003E727F /* en */,
+				A21789DB28ECB75F003E727F /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A2F982E728E7BE4300ABA8CA /* Debug */ = {
