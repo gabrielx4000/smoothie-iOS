@@ -42,7 +42,7 @@ public class SmoothieRO: Object {
         self.prepTime = smoothie.prepTime ?? ""
         self.skill = smoothie.skill ?? ""
         self.servings = smoothie.servings ?? ""
-        self.rating = smoothie.rating
+        self.rating = String(smoothie.rating)
         self.tags.append(objectsIn: smoothie.tags)
         
         if let ingredients = smoothie.ingredients {
@@ -75,6 +75,8 @@ public class SmoothieRO: Object {
 extension SmoothieRO {
     
     func toDomain() -> Smoothie {
+        let rating = Double(rating) ?? 0
+        
         let nutrition = (nutrition ?? SmoothieNutritionRO.zero()).toDomain()
         
         let steps = Array(steps.compactMap { $0.toDomain() })

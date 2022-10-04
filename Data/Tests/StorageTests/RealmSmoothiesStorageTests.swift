@@ -176,7 +176,7 @@ final class RealmSmoothiesStorageTests: XCTestCase {
             "gluten-free"
         ]
         
-        let smoothie = Smoothie(title: "Banana smoothie", url: "https://www.bbcgoodfood.com/recipes/afternoon-pick-me-smoothie", thumbnail: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/afternoon-pick-me-up-smoothie-506a768.jpg", rating: "4.2", tags: tags)
+        let smoothie = Smoothie(title: "Banana smoothie", url: "https://www.bbcgoodfood.com/recipes/afternoon-pick-me-smoothie", thumbnail: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/afternoon-pick-me-up-smoothie-506a768.jpg", rating: 4.2, tags: tags)
         
         return SmoothieRO(smoothie: smoothie)
     }
@@ -255,7 +255,7 @@ final class RealmSmoothiesStorageTests: XCTestCase {
             title: "Banana smoothie",
             url: "https://www.bbcgoodfood.com/recipes/afternoon-pick-me-smoothie",
             thumbnail: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/afternoon-pick-me-up-smoothie-506a768.jpg",
-            rating: "4.2",
+            rating: 4.2,
             tags: tags,
             description: "Quick and easy to make, this banana, prune, almond milk and nut butter smoothie is an ideal on-the-go energy boost",
             prepTime: "5 mins",

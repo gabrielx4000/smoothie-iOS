@@ -8,7 +8,7 @@ public struct Smoothie {
 
     public var thumbnail: String
     
-    public var rating: String
+    public var rating: Double
     
     public var tags: [String]
     
@@ -30,7 +30,7 @@ public struct Smoothie {
     
     public var tips: [SmoothieTip]?
     
-    public init(title: String, url: String, thumbnail: String, rating: String, tags: [String], description: String? = nil, prepTime: String? = nil, skill: String? = nil, servings: String? = nil, ingredients: [String]? = nil, nutrition: SmoothieNutrition? = nil, steps: [SmoothieStep]? = nil, recommended: [SmoothieRecommended]? = nil, tips: [SmoothieTip]? = nil) {
+    public init(title: String, url: String, thumbnail: String, rating: Double, tags: [String], description: String? = nil, prepTime: String? = nil, skill: String? = nil, servings: String? = nil, ingredients: [String]? = nil, nutrition: SmoothieNutrition? = nil, steps: [SmoothieStep]? = nil, recommended: [SmoothieRecommended]? = nil, tips: [SmoothieTip]? = nil) {
         self.title = title
         self.url = url
         self.thumbnail = thumbnail

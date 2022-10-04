@@ -26,7 +26,7 @@ public struct SmoothieShortDTO: Decodable {
 extension SmoothieShortDTO {
     
     func toDomain() -> Smoothie {
-        return Smoothie(title: title, url: url, thumbnail: thumbnail, rating: rating, tags: tags)
+        return Smoothie(title: title, url: url, thumbnail: thumbnail, rating: Double(rating) ?? 0, tags: tags)
     }
     
 }
