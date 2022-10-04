@@ -19,7 +19,7 @@ public class GetSmoothiesUseCase: GetSmoothiesUseCaseProcol {
         return repository
             .getPublisher()
             .map { smoothies in
-                smoothies.sorted(by: { $0.title.caseInsensitiveCompare($1.title) == .orderedAscending})
+                smoothies.sorted(by: { $0.title.caseInsensitiveCompare($1.title) == .orderedAscending })
             }
             .eraseToAnyPublisher()
     }

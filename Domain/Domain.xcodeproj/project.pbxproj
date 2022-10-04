@@ -28,6 +28,8 @@
 		A281E1CB28D9446A0027B358 /* SmoothieRecommended.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1CA28D9446A0027B358 /* SmoothieRecommended.swift */; };
 		A281E1CD28D944A10027B358 /* SmoothieNutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1CC28D944A10027B358 /* SmoothieNutrition.swift */; };
 		A281E1CF28D944CC0027B358 /* SmoothieTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E1CE28D944CC0027B358 /* SmoothieTip.swift */; };
+		A28B781A28EBAED900E4B61A /* GetSmoothiesHighestRatedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28B781928EBAED900E4B61A /* GetSmoothiesHighestRatedUseCase.swift */; };
+		A28B782228EBB47800E4B61A /* GetSmoothiesHighestRatedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28B782128EBB47800E4B61A /* GetSmoothiesHighestRatedUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		A281E1CA28D9446A0027B358 /* SmoothieRecommended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRecommended.swift; sourceTree = "<group>"; };
 		A281E1CC28D944A10027B358 /* SmoothieNutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieNutrition.swift; sourceTree = "<group>"; };
 		A281E1CE28D944CC0027B358 /* SmoothieTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieTip.swift; sourceTree = "<group>"; };
+		A28B781928EBAED900E4B61A /* GetSmoothiesHighestRatedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothiesHighestRatedUseCase.swift; sourceTree = "<group>"; };
+		A28B782128EBB47800E4B61A /* GetSmoothiesHighestRatedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSmoothiesHighestRatedUseCaseTests.swift; sourceTree = "<group>"; };
 		A298AD0528D7FAEE0045DD73 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +118,7 @@
 				A20DD2FB28D7FB4000CC08C5 /* GetSmoothiesUseCase.swift */,
 				A21E9DE428E753B0006A6EB8 /* GetSmoothieUseCase.swift */,
 				A22A376728E775FC009F58AC /* GetSmoothieTagsUseCase.swift */,
+				A28B781928EBAED900E4B61A /* GetSmoothiesHighestRatedUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				A21E9DD828E74070006A6EB8 /* GetFruitsUseCaseTests.swift */,
+				A28B782128EBB47800E4B61A /* GetSmoothiesHighestRatedUseCaseTests.swift */,
 				A22A376928E77F40009F58AC /* GetSmoothieTagsUseCaseTests.swift */,
 				A21E9DE628E754C8006A6EB8 /* GetSmoothieUseCaseTests.swift */,
 				A21E9DE028E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift */,
@@ -277,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A28B782228EBB47800E4B61A /* GetSmoothiesHighestRatedUseCaseTests.swift in Sources */,
 				A21E9DE128E74F7C006A6EB8 /* GetSmoothiesUseCaseTests.swift in Sources */,
 				A22A376A28E77F40009F58AC /* GetSmoothieTagsUseCaseTests.swift in Sources */,
 				A21E9DD928E74070006A6EB8 /* GetFruitsUseCaseTests.swift in Sources */,
@@ -303,6 +310,7 @@
 				A20DD2FC28D7FB4000CC08C5 /* SmoothiesRepositoryInterface.swift in Sources */,
 				A20DD30028D7FB4000CC08C5 /* GetFruitsUseCase.swift in Sources */,
 				A22A376828E775FC009F58AC /* GetSmoothieTagsUseCase.swift in Sources */,
+				A28B781A28EBAED900E4B61A /* GetSmoothiesHighestRatedUseCase.swift in Sources */,
 				A281E1C728D943D90027B358 /* FruitNutrition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

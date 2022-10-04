@@ -57,7 +57,7 @@ extension SmoothieCompleteDTO {
             title: title,
             url: url,
             thumbnail: thumbnail,
-            rating: rating,
+            rating: Double(rating) ?? 0,
             tags: tags,
             description: description,
             prepTime: prepTime,

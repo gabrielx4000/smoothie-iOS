@@ -45,7 +45,7 @@ struct DomainTestsHelper {
             title: "Banana smoothie",
             url: "https://www.bbcgoodfood.com/recipes/afternoon-pick-me-smoothie",
             thumbnail: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/afternoon-pick-me-up-smoothie-506a768.jpg",
-            rating: "4.2",
+            rating: 4.2,
             tags: [
                 "freezable",
                 "gluten-free"
@@ -58,7 +58,7 @@ struct DomainTestsHelper {
             title: "Acai bowl",
             url: "https://www.bbcgoodfood.com/recipes/acai-bowl",
             thumbnail: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/acai-bowl-e1d7cbc.jpg",
-            rating: "4.5",
+            rating: 4.5,
             tags: [
                 "gluten-free",
                 "healthy",

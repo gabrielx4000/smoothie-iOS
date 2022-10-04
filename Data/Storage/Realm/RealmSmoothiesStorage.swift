@@ -43,7 +43,7 @@ public class RealmSmoothiesStorage: SmoothiesStorageProtocol {
             smoothieRO.prepTime = smoothie.prepTime ?? ""
             smoothieRO.skill = smoothie.skill ?? ""
             smoothieRO.servings = smoothie.servings ?? ""
-            smoothieRO.rating = smoothie.rating
+            smoothieRO.rating = String(smoothie.rating)
             
             smoothieRO.tags.removeAll()
             smoothieRO.tags.append(objectsIn: smoothie.tags)
