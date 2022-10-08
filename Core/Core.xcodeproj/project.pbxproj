@@ -13,6 +13,10 @@
 		A240957728E78CD3004A9345 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A240957328E78CD3004A9345 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A240958528E78E83004A9345 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A240958328E78E83004A9345 /* MainCoordinator.swift */; };
 		A240958628E78E83004A9345 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A240958428E78E83004A9345 /* CoordinatorProtocol.swift */; };
+		A2CBC29028F0FDA500A8595C /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC28F28F0FDA500A8595C /* TabCoordinator.swift */; };
+		A2CBC29A28F1110B00A8595C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC29928F1110B00A8595C /* HomeCoordinator.swift */; };
+		A2CBC29C28F1115C00A8595C /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC29B28F1115C00A8595C /* SearchCoordinator.swift */; };
+		A2CBC29E28F112DB00A8595C /* FruitsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC29D28F112DB00A8595C /* FruitsCoordinator.swift */; };
 		A2F982F628E7C11A00ABA8CA /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F982F528E7C11A00ABA8CA /* Presentation.framework */; };
 		A2F982F728E7C11A00ABA8CA /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2F982F528E7C11A00ABA8CA /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -39,6 +43,10 @@
 		A240957328E78CD3004A9345 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A240958328E78E83004A9345 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		A240958428E78E83004A9345 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		A2CBC28F28F0FDA500A8595C /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		A2CBC29928F1110B00A8595C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		A2CBC29B28F1115C00A8595C /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		A2CBC29D28F112DB00A8595C /* FruitsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCoordinator.swift; sourceTree = "<group>"; };
 		A2F982F528E7C11A00ABA8CA /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -59,6 +67,7 @@
 		A240955B28E78BA0004A9345 = {
 			isa = PBXGroup;
 			children = (
+				A2CBC29828F1108700A8595C /* Protocols */,
 				A240958228E78E83004A9345 /* Coordinators */,
 				A240956628E78BA0004A9345 /* Products */,
 				A240957128E78CD3004A9345 /* Frameworks */,
@@ -87,9 +96,20 @@
 			isa = PBXGroup;
 			children = (
 				A240958328E78E83004A9345 /* MainCoordinator.swift */,
-				A240958428E78E83004A9345 /* CoordinatorProtocol.swift */,
+				A2CBC29928F1110B00A8595C /* HomeCoordinator.swift */,
+				A2CBC29B28F1115C00A8595C /* SearchCoordinator.swift */,
+				A2CBC29D28F112DB00A8595C /* FruitsCoordinator.swift */,
+				A2CBC28F28F0FDA500A8595C /* TabCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		A2CBC29828F1108700A8595C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A240958428E78E83004A9345 /* CoordinatorProtocol.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A240958628E78E83004A9345 /* CoordinatorProtocol.swift in Sources */,
+				A2CBC29C28F1115C00A8595C /* SearchCoordinator.swift in Sources */,
+				A2CBC29A28F1110B00A8595C /* HomeCoordinator.swift in Sources */,
+				A2CBC29028F0FDA500A8595C /* TabCoordinator.swift in Sources */,
 				A240958528E78E83004A9345 /* MainCoordinator.swift in Sources */,
+				A2CBC29E28F112DB00A8595C /* FruitsCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

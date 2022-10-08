@@ -12,7 +12,9 @@ public class MainCoordinator: CoordinatorProtocol {
     }
     
     public func start() {
-        showConnection()
+        let tabCoordinator = TabCoordinator(navigationController: navigationController)
+        children.append(tabCoordinator)
+        tabCoordinator.start()
     }
     
     private func showConnection() {

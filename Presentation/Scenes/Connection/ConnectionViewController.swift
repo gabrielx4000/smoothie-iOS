@@ -16,7 +16,7 @@ public class ConnectionViewController: UIViewController {
     
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.textColor = Color.textPrimary.rawValue
+        titleLabel.textColor = Colors.textPrimary.rawValue
         titleLabel.text = "connection_screen_title".localized
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
@@ -27,7 +27,7 @@ public class ConnectionViewController: UIViewController {
     
     lazy var textLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.textColor = Color.textPrimary.rawValue
+        titleLabel.textColor = Colors.textPrimary.rawValue
         titleLabel.text = "connection_screen_text".localized
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.boldSystemFont(ofSize: 14)
@@ -39,8 +39,8 @@ public class ConnectionViewController: UIViewController {
     lazy var button: UIButton = {
         let button = UIButton()
         button.setTitle("connection_screen_button".localized, for: .normal)
-        button.backgroundColor = Color.primary.rawValue
-        button.tintColor = Color.actionTextOnColor.rawValue
+        button.backgroundColor = Colors.primary.rawValue
+        button.tintColor = Colors.actionTextOnColor.rawValue
         button.layer.cornerRadius = 12
         
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
@@ -68,7 +68,7 @@ public class ConnectionViewController: UIViewController {
             navigationController.isNavigationBarHidden = true
         }
         
-        view.backgroundColor = Color.backgroundPrimary.rawValue
+        view.backgroundColor = Colors.backgroundPrimary.rawValue
         
         buildStackView()
         makeConstraints()

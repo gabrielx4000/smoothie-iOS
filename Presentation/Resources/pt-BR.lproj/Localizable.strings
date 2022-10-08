@@ -1,3 +1,8 @@
+//Connection Scene
 "connection_screen_title" = "Sem conexão com a internet";
 "connection_screen_text" = "Verifique sua conexão com a Internet e tente novamente.";
 "connection_screen_button" = "Tente novamente";
+//TabBarPages
+"tabBar_home_title" = "Início";
+"tabBar_search_title" = "Busca";
+"tabBar_fruits_title" = "Frutas";
