@@ -1,3 +1,5 @@
 import Foundation
 
-public class SearchViewModel {}
+public class SearchViewModel {
+    public init() {}
+}

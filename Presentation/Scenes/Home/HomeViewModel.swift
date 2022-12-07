@@ -1,3 +1,5 @@
 import Foundation
 
-public class HomeViewModel {}
+public class HomeViewModel {
+    public init() {}
+}

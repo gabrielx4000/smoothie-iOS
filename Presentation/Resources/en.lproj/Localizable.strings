@@ -6,3 +6,5 @@
 "tabBar_home_title" = "Home";
 "tabBar_search_title" = "Search";
 "tabBar_fruits_title" = "Fruits";
+//Fruits Scene
+"fruits_screen_title" = "Fruits";

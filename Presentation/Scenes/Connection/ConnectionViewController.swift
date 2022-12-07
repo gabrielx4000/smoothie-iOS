@@ -52,8 +52,8 @@ public class ConnectionViewController: UIViewController {
     
     private let viewModel: ConnectionViewModel
     
-    public init(viewModel: ConnectionViewModel) {
-        self.viewModel = viewModel
+    public init(factory: ConnectionFactoryPresentationProtocol) {
+        self.viewModel = factory.createConnectionViewModel()
         super.init(nibName: nil, bundle: nil)
     }
     

@@ -7,22 +7,17 @@ public class TabCoordinator: CoordinatorProtocol {
     
     public var navigationController: UINavigationController
     
-    public init(navigationController: UINavigationController) {
+    private var factory: TabCoreFactory
+
+    public init(navigationController: UINavigationController, factory: TabCoreFactory = TabFactory()) {
+        self.factory = factory
         self.navigationController = navigationController
     }
     
     public func start() {
-        let controllers = getTabControllers()
+        let tabBarController = factory.createMainTabBarController()
         
-        let tabBarController = MainTabBarController()
-        tabBarController.setViewControllers(controllers, animated: false)
-        tabBarController.selectedIndex = TabBarPages.home.rawValue
-        
-        navigationController.pushViewController(tabBarController, animated: false)
-    }
-    
-    private func getTabControllers() -> [UIViewController] {
-        TabBarPages.allCases.compactMap {
+        let controllers = TabBarPages.allCases.compactMap {
             let navigationController = UINavigationController()
             navigationController.setNavigationBarHidden(true, animated: false)
             navigationController.tabBarItem = UITabBarItem(
@@ -44,6 +39,10 @@ public class TabCoordinator: CoordinatorProtocol {
             
             return navigationController
         }
+        tabBarController.setViewControllers(controllers, animated: false)
+        tabBarController.selectedIndex = TabBarPages.home.rawValue
+        
+        navigationController.pushViewController(tabBarController, animated: false)
     }
     
 }

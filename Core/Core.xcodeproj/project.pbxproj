@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A203089E2940D4E00051147E /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203089D2940D4E00051147E /* HomeFactory.swift */; };
+		A20308A22940DDC80051147E /* SearchFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20308A12940DDC80051147E /* SearchFactory.swift */; };
+		A20308AB2940F0C00051147E /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20308AA2940F0C00051147E /* FactoryProtocol.swift */; };
+		A20308AD2940F2790051147E /* FruitsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20308AC2940F2790051147E /* FruitsFactory.swift */; };
+		A20308AF2940F7820051147E /* TabFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20308AE2940F7820051147E /* TabFactory.swift */; };
+		A20308B1294102D00051147E /* ConnectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20308B0294102D00051147E /* ConnectionCoordinator.swift */; };
+		A20308B3294103E50051147E /* ConnectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20308B2294103E50051147E /* ConnectionFactory.swift */; };
 		A240957428E78CD3004A9345 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A240957228E78CD3004A9345 /* Data.framework */; };
 		A240957528E78CD3004A9345 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A240957228E78CD3004A9345 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A240957628E78CD3004A9345 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A240957328E78CD3004A9345 /* Domain.framework */; };
@@ -17,6 +24,7 @@
 		A2CBC29A28F1110B00A8595C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC29928F1110B00A8595C /* HomeCoordinator.swift */; };
 		A2CBC29C28F1115C00A8595C /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC29B28F1115C00A8595C /* SearchCoordinator.swift */; };
 		A2CBC29E28F112DB00A8595C /* FruitsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBC29D28F112DB00A8595C /* FruitsCoordinator.swift */; };
+		A2CBC2A128F1157000A8595C /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = A2CBC2A028F1157000A8595C /* Swinject */; };
 		A2F982F628E7C11A00ABA8CA /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F982F528E7C11A00ABA8CA /* Presentation.framework */; };
 		A2F982F728E7C11A00ABA8CA /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2F982F528E7C11A00ABA8CA /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -38,6 +46,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A203089D2940D4E00051147E /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		A20308A12940DDC80051147E /* SearchFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactory.swift; sourceTree = "<group>"; };
+		A20308AA2940F0C00051147E /* FactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
+		A20308AC2940F2790051147E /* FruitsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsFactory.swift; sourceTree = "<group>"; };
+		A20308AE2940F7820051147E /* TabFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFactory.swift; sourceTree = "<group>"; };
+		A20308B0294102D00051147E /* ConnectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionCoordinator.swift; sourceTree = "<group>"; };
+		A20308B2294103E50051147E /* ConnectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionFactory.swift; sourceTree = "<group>"; };
 		A240956528E78BA0004A9345 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A240957228E78CD3004A9345 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A240957328E78CD3004A9345 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,15 +73,29 @@
 				A240957628E78CD3004A9345 /* Domain.framework in Frameworks */,
 				A240957428E78CD3004A9345 /* Data.framework in Frameworks */,
 				A2F982F628E7C11A00ABA8CA /* Presentation.framework in Frameworks */,
+				A2CBC2A128F1157000A8595C /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A203089C2940D4C30051147E /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A203089D2940D4E00051147E /* HomeFactory.swift */,
+				A20308A12940DDC80051147E /* SearchFactory.swift */,
+				A20308AC2940F2790051147E /* FruitsFactory.swift */,
+				A20308AE2940F7820051147E /* TabFactory.swift */,
+				A20308B2294103E50051147E /* ConnectionFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		A240955B28E78BA0004A9345 = {
 			isa = PBXGroup;
 			children = (
+				A203089C2940D4C30051147E /* Factories */,
 				A2CBC29828F1108700A8595C /* Protocols */,
 				A240958228E78E83004A9345 /* Coordinators */,
 				A240956628E78BA0004A9345 /* Products */,
@@ -100,6 +129,7 @@
 				A2CBC29B28F1115C00A8595C /* SearchCoordinator.swift */,
 				A2CBC29D28F112DB00A8595C /* FruitsCoordinator.swift */,
 				A2CBC28F28F0FDA500A8595C /* TabCoordinator.swift */,
+				A20308B0294102D00051147E /* ConnectionCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -107,6 +137,7 @@
 		A2CBC29828F1108700A8595C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				A20308AA2940F0C00051147E /* FactoryProtocol.swift */,
 				A240958428E78E83004A9345 /* CoordinatorProtocol.swift */,
 			);
 			name = Protocols;
@@ -140,6 +171,9 @@
 			dependencies = (
 			);
 			name = Core;
+			packageProductDependencies = (
+				A2CBC2A028F1157000A8595C /* Swinject */,
+			);
 			productName = Core;
 			productReference = A240956528E78BA0004A9345 /* Core.framework */;
 			productType = "com.apple.product-type.framework";
@@ -168,6 +202,9 @@
 				Base,
 			);
 			mainGroup = A240955B28E78BA0004A9345;
+			packageReferences = (
+				A2CBC29F28F1157000A8595C /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = A240956628E78BA0004A9345 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -192,9 +229,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20308B3294103E50051147E /* ConnectionFactory.swift in Sources */,
 				A240958628E78E83004A9345 /* CoordinatorProtocol.swift in Sources */,
+				A20308AF2940F7820051147E /* TabFactory.swift in Sources */,
+				A20308AD2940F2790051147E /* FruitsFactory.swift in Sources */,
 				A2CBC29C28F1115C00A8595C /* SearchCoordinator.swift in Sources */,
+				A203089E2940D4E00051147E /* HomeFactory.swift in Sources */,
 				A2CBC29A28F1110B00A8595C /* HomeCoordinator.swift in Sources */,
+				A20308B1294102D00051147E /* ConnectionCoordinator.swift in Sources */,
+				A20308AB2940F0C00051147E /* FactoryProtocol.swift in Sources */,
+				A20308A22940DDC80051147E /* SearchFactory.swift in Sources */,
 				A2CBC29028F0FDA500A8595C /* TabCoordinator.swift in Sources */,
 				A240958528E78E83004A9345 /* MainCoordinator.swift in Sources */,
 				A2CBC29E28F112DB00A8595C /* FruitsCoordinator.swift in Sources */,
@@ -409,6 +453,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2CBC29F28F1157000A8595C /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2CBC2A028F1157000A8595C /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2CBC29F28F1157000A8595C /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A240955C28E78BA0004A9345 /* Project object */;
 }

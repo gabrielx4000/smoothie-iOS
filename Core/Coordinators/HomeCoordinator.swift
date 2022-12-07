@@ -1,4 +1,3 @@
-import Presentation
 import UIKit
 
 public class HomeCoordinator: CoordinatorProtocol {
@@ -7,12 +6,15 @@ public class HomeCoordinator: CoordinatorProtocol {
     
     public var navigationController: UINavigationController
     
-    public init(navigationController: UINavigationController) {
+    private var factory: HomeCoreFactory
+
+    public init(navigationController: UINavigationController, factory: HomeCoreFactory = HomeFactory()) {
+        self.factory = factory
         self.navigationController = navigationController
     }
     
     public func start() {
-        let homeViewController = HomeViewController()
+        let homeViewController = factory.createHomeViewController()
         navigationController.pushViewController(homeViewController, animated: false)
     }
     
