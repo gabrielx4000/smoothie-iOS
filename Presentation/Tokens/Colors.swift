@@ -1,14 +1,15 @@
 import Foundation
 import UIKit
 
-enum Color {
+enum Colors {
     
-    case actionTextOnColor, backgroundPrimary, primary, textPrimary
+    case actionTextOnColor, backgroundPrimary, selectedPrimary, primary, textPrimary
     
     var name: String {
         switch self {
         case .actionTextOnColor: return "actionTextOnColor"
         case .backgroundPrimary: return "backgroundPrimary"
+        case .selectedPrimary: return "selectedPrimary"
         case .primary: return "primary"
         case .textPrimary: return "textPrimary"
         }
@@ -16,7 +17,7 @@ enum Color {
     
 }
 
-extension Color: RawRepresentable {
+extension Colors: RawRepresentable {
     
     typealias RawValue = UIColor
     
@@ -26,6 +27,7 @@ extension Color: RawRepresentable {
         case UIColor(color: .backgroundPrimary): self = .backgroundPrimary
         case UIColor(color: .primary): self = .primary
         case UIColor(color: .textPrimary): self = .textPrimary
+        case UIColor(color: .selectedPrimary): self = .selectedPrimary
         default: self = .primary
         }
     }
@@ -36,6 +38,7 @@ extension Color: RawRepresentable {
         case .backgroundPrimary: return UIColor(color: .backgroundPrimary) ?? .white
         case .primary: return UIColor(color: .primary) ?? .systemPink
         case .textPrimary: return UIColor(color: .textPrimary) ?? .black
+        case .selectedPrimary: return UIColor(color: .selectedPrimary) ?? .blue
         }
     }
     

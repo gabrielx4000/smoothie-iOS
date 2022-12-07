@@ -3,7 +3,11 @@ import Reachability
 
 public class NetworkHandler {
     
-    lazy var reachability = Reachability()
+    let reachability: Reachability
+    
+    public init(reachability: Reachability = Reachability()) {
+        self.reachability = reachability
+    }
     
     public func start<T: Decodable>(_ type: T.Type, request: URLRequest) async throws -> T {
         return try await withCheckedThrowingContinuation { continuation in

@@ -2,7 +2,7 @@ import Foundation
 
 public class ConnectionViewModel {
     
-    public init() {}
+    public init(factory: ConnectionFactoryPresentationProtocol) {}
     
     @objc public func retryConnection() {
         print("noConnetion")

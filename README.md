@@ -4,6 +4,8 @@ Template iOS app using Clean Architecture and MVVM.
 ## Projects
 ### Application
 ### Core
+#### Dependencies
+- [Swinject](https://github.com/Swinject/Swinject): Swinject is a lightweight dependency injection framework for Swift.
 ### Data
 #### Dependencies
  - [Reachability](https://github.com/Alecrim/Reachability): A new, clean and lean network interface reachability library written in Swift.

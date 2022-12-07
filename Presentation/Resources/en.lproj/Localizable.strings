@@ -1,3 +1,10 @@
+//Connection Scene
 "connection_screen_title" = "No internet connetion";
 "connection_screen_text" = "Check your internet connection and try again.";
 "connection_screen_button" = "Try again";
+//TabBarPages
+"tabBar_home_title" = "Home";
+"tabBar_search_title" = "Search";
+"tabBar_fruits_title" = "Fruits";
+//Fruits Scene
+"fruits_screen_title" = "Fruits";

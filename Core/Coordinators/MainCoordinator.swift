@@ -1,4 +1,3 @@
-import Presentation
 import UIKit
 
 public class MainCoordinator: CoordinatorProtocol {
@@ -12,15 +11,8 @@ public class MainCoordinator: CoordinatorProtocol {
     }
     
     public func start() {
-        showConnection()
+        let tabCoordinator = TabCoordinator(navigationController: navigationController)
+        children.append(tabCoordinator)
+        tabCoordinator.start()
     }
-    
-    private func showConnection() {
-        navigationController.popToRootViewController(animated: true)
-        
-        let connectionViewController = ConnectionViewController(viewModel: ConnectionViewModel())
-        
-        navigationController.pushViewController(connectionViewController, animated: false)
-    }
-    
 }
